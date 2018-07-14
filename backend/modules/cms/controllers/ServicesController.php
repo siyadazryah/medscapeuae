@@ -77,31 +77,15 @@ class ServicesController extends Controller {
 
         if ($model->load(Yii::$app->request->post()) && Yii::$app->SetValues->Attributes($model)) {
             $image = UploadedFile::getInstance($model, 'image');
-            $file12 = UploadedFile::getInstances($model, 'gallery');
             $model->image = $image->extension;
-            $model->gallery = '';
             if ($model->validate() && $model->save()) {
                 if (!empty($image)) {
                     $path = Yii::$app->basePath . '/../uploads/services/' . $model->id . '/';
                     $size = [
-                        ['width' => 110, 'height' => 60, 'name' => 'small'],
-                        ['width' => 768, 'height' => 410, 'name' => 'image'],
+                        ['width' => 100, 'height' => 52, 'name' => 'small'],
+                        ['width' => 1000, 'height' => 526, 'name' => 'image'],
                     ];
                     Yii::$app->UploadFile->UploadFile($model, $image, $path, $size);
-                }
-
-                for ($i = 0; $i < sizeof($file12); $i++) {
-                    if ($model->uploadMultiple($file12[$i], $model->id, 'image', $i)) {
-// file is uploaded successfully
-                    } else {
-                        echo 'Image Upload Failed:';
-                    }
-//                    $path2 = Yii::$app->basePath . '/../uploads/services/' . $model->id . '/gallery/';
-//                    $size2 = [
-//                        ['width' => 110, 'height' => 60, 'name' => 'small' . $i],
-//                        ['width' => 700, 'height' => 438, 'name' => 'image' . $i],
-//                    ];
-//                    Yii::$app->UploadFile->UploadFile($model, $image, $path2, $size2);
                 }
                 Yii::$app->session->setFlash('success', "New Services added Successfully");
                 return $this->redirect(['create']);
@@ -122,9 +106,7 @@ class ServicesController extends Controller {
         $image_ = $model->image;
 
         if ($model->load(Yii::$app->request->post()) && Yii::$app->SetValues->Attributes($model)) {
-            $image = UploadedFile::getInstance($model, 'image');
-            $file12 = UploadedFile::getInstances($model, 'gallery');
-            $model->gallery = '';
+            $image = UploadedFile::getInstance($model, 'image'); 
             if (!empty($image))
                 $model->image = $image->extension;
             else
@@ -133,17 +115,10 @@ class ServicesController extends Controller {
                 if (!empty($image)) {
                     $path = Yii::$app->basePath . '/../uploads/services/' . $model->id . '/';
                     $size = [
-                        ['width' => 110, 'height' => 60, 'name' => 'small'],
-                        ['width' => 768, 'height' => 410, 'name' => 'image'],
+                        ['width' => 100, 'height' => 52, 'name' => 'small'],
+                        ['width' => 1000, 'height' => 526, 'name' => 'image'],
                     ];
                     Yii::$app->UploadFile->UploadFile($model, $image, $path, $size);
-                }
-                for ($i = 0; $i < sizeof($file12); $i++) {
-                    if ($model->uploadMultiple($file12[$i], $model->id, 'image', $i)) {
-// file is uploaded successfully
-                    } else {
-                        echo 'Image Upload Failed:';
-                    }
                 }
             }
             Yii::$app->session->setFlash('success', "Services Updated Successfully");
@@ -153,21 +128,6 @@ class ServicesController extends Controller {
         return $this->render('update', [
                     'model' => $model,
         ]);
-    }
-
-    public function actionAjax_imgdelete() {
-        if (yii::$app->request->isAjax) {
-            $image = Yii::$app->request->post()['image'];
-//        echo yii::$app->homeUrl;exit;
-            if ($image) {
-                $img = explode('@', $image);
-                unlink(yii::$app->basepath . '/../uploads/services/' . $img['0'] . '/gallery/' . $img['1']);
-                unlink(yii::$app->basepath . '/../uploads/services/' . $img['0'] . '/gallery_thumb/' . $img['1']);
-                echo json_encode(array('msg' => 'success', 'id' => $img['2']));
-            } else {
-                echo json_encode(array('msg' => 'error', 'title' => 'Image Not Found'));
-            }
-        }
     }
 
     /**

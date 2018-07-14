@@ -20,7 +20,6 @@ use yii\base\Widget;
 use yii\helpers\Html;
 use yii\web\NotFoundHttpException;
 use common\models\Services;
-use common\models\Contact;
 
 class ServicemenuWidget extends Widget {
 
@@ -34,11 +33,9 @@ class ServicemenuWidget extends Widget {
     }
 
     public function run() {
-        $all_services = Services::find()->where(['status' => 1])->orderBy(['id' => SORT_ASC])->all();
-        $contacts_content = Contact::findOne(1);
+        $all_services = Services::find()->where(['status' => 1])->orderBy(['sort' => SORT_ASC])->all();
         return $this->render('servicemenu', [
                     'all_services' => $all_services,
-                    'contacts_content' => $contacts_content,
         ]);
         //return Html::encode($this->message);
     }

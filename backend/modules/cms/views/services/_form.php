@@ -19,9 +19,6 @@ use dosamigos\ckeditor\CKEditor;
         </div><div class='col-md-4 col-sm-6 col-xs-12 left_padd'>    
             <?= $form->field($model, 'canonical_name')->textInput(['maxlength' => true, 'readOnly' => true]) ?>
 
-        </div><div class='col-md-4 col-sm-6 col-xs-12 left_padd'>    
-            <?= $form->field($model, 'title')->textInput(['maxlength' => true]) ?>
-
         </div>
     </div>
     <div class="row">
@@ -37,7 +34,7 @@ use dosamigos\ckeditor\CKEditor;
     </div>
     <div class="row">
         <div class='col-md-4 col-sm-6 col-xs-12 left_padd'>    
-            <?= $form->field($model, 'image', ['options' => ['class' => 'form-group'], 'template' => '{label}<label>Image [ File Size :( 850x250 ) ]</label>{input}{error}'])->fileInput(['maxlength' => true])->label(FALSE) ?>
+            <?= $form->field($model, 'image', ['options' => ['class' => 'form-group'], 'template' => '{label}<label>Image [ File Size :( 1000x526 ) ]</label>{input}{error}'])->fileInput(['maxlength' => true])->label(FALSE) ?>
             <?php
             if ($model->isNewRecord)
                 echo "";
@@ -45,7 +42,7 @@ use dosamigos\ckeditor\CKEditor;
                 if (!empty($model->image)) {
                     ?>
 
-                    <img src="<?= Yii::$app->homeUrl ?>../uploads/services/<?= $model->id ?>/small.<?= $model->image.'?'.rand(); ?>" width="110" height="40"/>
+                    <img src="<?= Yii::$app->homeUrl ?>../uploads/services/<?= $model->id ?>/small.<?= $model->image.'?'.rand(); ?>" width="100" height="52"/>
                     <?php
                 }
             }
@@ -68,46 +65,7 @@ use dosamigos\ckeditor\CKEditor;
             <?= $form->field($model, 'status')->dropDownList(['1' => 'Enabled', '0' => 'Disabled']) ?>
 
         </div>   
-        <div class='col-md-4 col-sm-6 col-xs-12 left_padd'>    
-            <?= $form->field($model, 'gallery[]')->fileInput(['multiple' => true, 'accept' => 'image/*'])->label('Gallery Images<i> (700*438)</i>') ?>
-            <?php if (!$model->isNewRecord) { ?>
-                                                                                                                                                                                                                                    <!--<a href=''><img src="<?= yii::$app->homeUrl ?>/../../uploads/product/1/dasda_0.jpg" width="100" alt="Delete"></a>-->
-                <div class="row">
-                    <?php
-                    $path = Yii::getAlias('@paths') . '/services/' . $model->id . '/gallery';
-                    if (count(glob("{$path}/*")) > 0) {
-                        echo "<hr class='appoint_history'/> <h4 class='sub-heading'>Uploaded Files</h4>";
-
-                        $k = 0;
-                        foreach (glob("{$path}/*") as $file) {
-                            $k++;
-                            $arry = explode('/', $file);
-                            $img_nmee = end($arry);
-
-                            $img_nmees = explode('.', $img_nmee);
-                            if ($img_nmees['1'] != '') {
-                                ?>
-
-                                <div class = "col-md-3 img-box" id="<?= $k; ?>">
-                                    <a href="<?= Yii::$app->homeUrl . '../uploads/services/' . $model->id . '/gallery_thumb/' . end($arry) ?>" target="_blank">
-                                        <img src="<?= Yii::$app->homeUrl . '../uploads/services/' . $model->id . '/gallery_thumb/' . end($arry) ?>" width="70px" height="45px"></a>
-                                    <a  title="Delete" class="img-remove product_image" id="<?= $model->id . "@" . $img_nmee . '@' . $k; ?>" style="cursor:pointer"><i class="fa fa-remove" style="position: absolute; right: 0px;top: -5px; color: red;"></i></a>
-                                </div>
-
-
-                                <?php
-                            }
-                        }
-                    }
-                    ?>
-                </div>
-                <!--</div>-->
-                <?php
-                //  \yii\helpers\FileHelper::findFiles('uploads/product/'.$model->id.'/',['only'=>['*.jpg','*.png']]);
-            }
-            ?>
-
-        </div>   
+          
     </div>
     <div class="row">
         <div class='col-md-12 col-sm-12 col-xs-12'>

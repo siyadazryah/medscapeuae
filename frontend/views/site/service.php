@@ -18,21 +18,7 @@ use common\components\ServicemenuWidget;
 <section class="in-services-section"><!--in-clients-section-->
 	<div class="container">
     	<div class="row">
-        <div class="col-lg-4">
-        	<div class="service-categories">
-                	<h2 class="head active"><a data-toggle="collapse"  href="#our-services" role="button">our Services</a></h2>
-                    <ul class="list-box collapse" id="our-services">
-                    	<li><a href="services.html" class="dropdown-item" title="">Piped medical gas system</a></li>
-                      <li><a href="services.html" class="dropdown-item" title="">Medical Gas equipment’s</a></li>
-                      <li><a href="services.html" class="dropdown-item" title="">Service and AMC contract</a></li>
-                      <li><a href="services.html" class="dropdown-item" title="">OT Sliding door maintenance</a></li>
-                      <li><a href="services.html" class="dropdown-item" title="">Medical furniture</a></li>
-                      <li><a href="services.html" class="dropdown-item" title="">Project management</a></li>
-                      <li><a href="services.html" class="dropdown-item" title="">Testing and commissioning</a></li>
-                      <li><a href="services.html" class="dropdown-item" title="">Dental air & vacuum maintenance </a></li>
-                    </ul>
-                </div>
-        </div> 
+        <?= ServicemenuWidget::widget(); ?> 
         <div class="col-lg-8">
         	<div class="services-cont-box">
             	<h3 class="head">Piped medical gas system</h3>

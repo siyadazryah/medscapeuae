@@ -10,24 +10,22 @@ use common\models\Services;
 /**
  * ServicesSearch represents the model behind the search form about `common\models\Services`.
  */
-class ServicesSearch extends Services
-{
+class ServicesSearch extends Services {
+
     /**
      * @inheritdoc
      */
-    public function rules()
-    {
+    public function rules() {
         return [
             [['id', 'sort', 'CB', 'UB', 'status'], 'integer'],
-            [['name', 'canonical_name', 'title', 'content', 'short_content', 'image', 'image_alt', 'gallery', 'DOC', 'DOU'], 'safe'],
+            [['name', 'canonical_name', 'content', 'image', 'image_alt', 'DOC', 'DOU'], 'safe'],
         ];
     }
 
     /**
      * @inheritdoc
      */
-    public function scenarios()
-    {
+    public function scenarios() {
         // bypass scenarios() implementation in the parent class
         return Model::scenarios();
     }
@@ -39,8 +37,7 @@ class ServicesSearch extends Services
      *
      * @return ActiveDataProvider
      */
-    public function search($params)
-    {
+    public function search($params) {
         $query = Services::find();
 
         // add conditions that should always apply here
@@ -69,14 +66,12 @@ class ServicesSearch extends Services
         ]);
 
         $query->andFilterWhere(['like', 'name', $this->name])
-            ->andFilterWhere(['like', 'canonical_name', $this->canonical_name])
-            ->andFilterWhere(['like', 'title', $this->title])
-            ->andFilterWhere(['like', 'content', $this->content])
-            ->andFilterWhere(['like', 'short_content', $this->short_content])
-            ->andFilterWhere(['like', 'image', $this->image])
-            ->andFilterWhere(['like', 'image_alt', $this->image_alt])
-            ->andFilterWhere(['like', 'gallery', $this->gallery]);
+                ->andFilterWhere(['like', 'canonical_name', $this->canonical_name])
+                ->andFilterWhere(['like', 'content', $this->content])
+                ->andFilterWhere(['like', 'image', $this->image])
+                ->andFilterWhere(['like', 'image_alt', $this->image_alt]);
 
         return $dataProvider;
     }
+
 }
