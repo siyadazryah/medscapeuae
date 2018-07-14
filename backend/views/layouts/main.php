@@ -98,8 +98,8 @@ AppAsset::register($this);
                         </ul>
                     </li>
                     <li>
-                                    <?= Html::a('<i class="fa fa-hotel"></i> About', ['/cms/about/update', 'id' => 1], ['class' => 'title']) ?>
-                                </li>
+                        <?= Html::a('<i class="fa fa-hotel"></i> About', ['/cms/about/update', 'id' => 1], ['class' => 'title']) ?>
+                    </li>
                     <li>
                         <a href="">
                             <i class="fa fa-photo"></i>
@@ -130,24 +130,13 @@ AppAsset::register($this);
                     </li>
 
                     <li>
-                        <a href="">
-                            <i class="fa fa-address-card"></i>
-                            <span class="title">Contact</span>
-                        </a>
-                        <ul>
-                            <li>
-                                <?= Html::a('<i class="fa fa-angle-double-right"></i> Contact', ['/cms/contact/update', 'id' => 1], ['class' => 'title']) ?>
-                            </li>
-                            <li>
-                                <?= Html::a('<i class="fa fa-angle-double-right"></i> Adresses', ['/cms/contact-address/index'], ['class' => 'title']) ?>
-                            </li>
-                        </ul>
+                        <?= Html::a('<i class="fa fa-address-card"></i> <span class="title">Contact</span>', ['/cms/contact/update', 'id' => 1], ['class' => 'title']) ?>
                     </li>
                     <li>
                         <?= Html::a('<i class="fa fa-server"></i> <span class="title">Services</span>', ['/cms/services/index'], ['class' => 'title']) ?>
                     </li>
                     <li>
-                        <?= Html::a('<i class="fa fa-sitemap"></i> <span class="title">Partners</span>', ['/cms/partners/index'], ['class' => 'title']) ?>
+                        <?= Html::a('<i class="fa fa-sitemap"></i> <span class="title">Clients</span>', ['/cms/partners/index'], ['class' => 'title']) ?>
                     </li>
                     <li>
                         <?= Html::a('<i class="fa fa-envelope"></i> <span class="title">Contact Us</span>', ['/cms/contact-form/index'], ['class' => 'title']) ?>
@@ -261,8 +250,8 @@ AppAsset::register($this);
                             </ul>
                         </li>
                         <li>
-                                    <?= Html::a('<i class="fa fa-hotel"></i> About', ['/cms/about/update', 'id' => 1], ['class' => 'title']) ?>
-                                </li>
+                            <?= Html::a('<i class="fa fa-hotel"></i> About', ['/cms/about/update', 'id' => 1], ['class' => 'title']) ?>
+                        </li>
                         <li>
                             <a href="">
                                 <i class="fa fa-photo"></i>
@@ -293,24 +282,13 @@ AppAsset::register($this);
                         </li>
 
                         <li>
-                            <a href="">
-                                <i class="fa fa-address-card"></i>
-                                <span class="title">Contact</span>
-                            </a>
-                            <ul>
-                                <li>
-                                    <?= Html::a('<i class="fa fa-angle-double-right"></i> Contact', ['/cms/contact/update', 'id' => 1], ['class' => 'title']) ?>
-                                </li>
-                                <li>
-                                    <?= Html::a('<i class="fa fa-angle-double-right"></i> Adresses', ['/cms/contact-address/index'], ['class' => 'title']) ?>
-                                </li>
-                            </ul>
+                            <?= Html::a('<i class="fa fa-address-card"></i> <span class="title">Contact</span>', ['/cms/contact/update', 'id' => 1], ['class' => 'title']) ?>
                         </li>
                         <li>
                             <?= Html::a('<i class="fa fa-server"></i> <span class="title">Services</span>', ['/cms/services/index'], ['class' => 'title']) ?>
                         </li>
                         <li>
-                            <?= Html::a('<i class="fa fa-sitemap"></i> <span class="title">Partners</span>', ['/cms/partners/index'], ['class' => 'title']) ?>
+                            <?= Html::a('<i class="fa fa-sitemap"></i> <span class="title">Clients</span>', ['/cms/partners/index'], ['class' => 'title']) ?>
                         </li>
                         <li>
                             <?= Html::a('<i class="fa fa-envelope"></i> <span class="title">Contact Us</span>', ['/cms/contact-form/index'], ['class' => 'title']) ?>

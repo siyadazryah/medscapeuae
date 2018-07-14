@@ -10,7 +10,6 @@ use Yii;
  * @property int $id
  * @property string $map
  * @property string $address
- * @property string $whatsapp
  * @property string $phone
  * @property int $UB
  * @property string $DOU
@@ -32,12 +31,13 @@ class Contact extends \yii\db\ActiveRecord
     public function rules()
     {
         return [
-            [['map', 'address', 'whatsapp', 'phone'], 'required'],
+            [['map', 'address'], 'required'],
             [['address'], 'string'],
             [['UB', 'status'], 'integer'],
             [['DOU'], 'safe'],
             [['map'], 'string', 'max' => 400],
-            [['whatsapp', 'phone'], 'string', 'max' => 200],
+            [['pobox','mobile', 'fax', 'email', 'phone'], 'string', 'max' => 200],
+            [['email'], 'email'],
         ];
     }
 
@@ -50,7 +50,10 @@ class Contact extends \yii\db\ActiveRecord
             'id' => 'ID',
             'map' => 'Map',
             'address' => 'Address',
-            'whatsapp' => 'Whatsapp',
+            'pobox' => 'P.O Box',
+            'mobile' => 'Mobile',
+            'fax' => 'Fax',
+            'email' => 'Email',
             'phone' => 'Phone',
             'UB' => 'Ub',
             'DOU' => 'Dou',

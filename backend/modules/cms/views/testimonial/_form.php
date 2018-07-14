@@ -30,7 +30,7 @@ use yii\widgets\ActiveForm;
     </div>
     <div class="row">
         <div class='col-md-4 col-sm-6 col-xs-12 left_padd'>   
-            <?= $form->field($model, 'image', ['options' => ['class' => 'form-group'], 'template' => '{label}<label>Image [ File Size :( 100x100 ) ]</label>{input}{error}'])->fileInput(['maxlength' => true])->label(FALSE) ?>
+            <?= $form->field($model, 'image', ['options' => ['class' => 'form-group'], 'template' => '{label}<label>Image [ File Size :( 168x168 ) ]</label>{input}{error}'])->fileInput(['maxlength' => true])->label(FALSE) ?>
             <?php
             if ($model->isNewRecord)
                 echo "";

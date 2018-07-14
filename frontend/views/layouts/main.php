@@ -20,6 +20,7 @@ AppAsset::register($this);
         <META NAME="ROBOTS" CONTENT="NOINDEX, NOFOLLOW">
         <meta charset="utf-8">
         <link rel="shortcut icon" href="favicon/icon.png">
+        <!--<script   src="<?= yii::$app->homeUrl ?>js/jquery.min.js"></script>-->
         <script   src="<?= yii::$app->homeUrl ?>js/jquery-1.6.1.min.js"></script>
         <?php $this->head() ?>
 

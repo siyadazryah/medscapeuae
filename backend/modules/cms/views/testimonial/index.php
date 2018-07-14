@@ -48,7 +48,7 @@ $this->params['breadcrumbs'][] = $this->title;
                                     'format' => 'raw',
                                     'value' => function ($data) {
                                         if (!empty($data->image))
-                                            $img = '<img width="120px" src="' . Yii::$app->homeUrl . '../uploads/testimonials/' . $data->id . '/image.' . $data->image . '"/>';
+                                            $img = '<img width="100px" src="' . Yii::$app->homeUrl . '../uploads/testimonials/' . $data->id . '/image.' . $data->image . '?'.rand().'"/>';
                                         return $img;
                                     },
                                 ],

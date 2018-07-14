@@ -17,7 +17,7 @@ use yii\widgets\ActiveForm;
 
         </div>
         <div class='col-md-4 col-sm-6 col-xs-12 left_padd'>    
-            <?= $form->field($model, 'image', ['options' => ['class' => 'form-group'], 'template' => '{label}<label>Image [ Max File Size :( 163x90 ) ]</label>{input}{error}'])->fileInput(['maxlength' => true])->label(FALSE) ?>
+            <?= $form->field($model, 'image', ['options' => ['class' => 'form-group'], 'template' => '{label}<label>Image [ Max File Size :( 200x120 ) ]</label>{input}{error}'])->fileInput(['maxlength' => true])->label(FALSE) ?>
             <?php
             if ($model->isNewRecord)
                 echo "";
@@ -25,7 +25,7 @@ use yii\widgets\ActiveForm;
                 if (!empty($model->image)) {
                     ?>
 
-                    <img src="<?= Yii::$app->homeUrl ?>../uploads/partners/<?= $model->id ?>/image.<?= $model->image . '?' . rand(); ?>" width="100" height="55"/>
+                    <img src="<?= Yii::$app->homeUrl ?>../uploads/clients/<?= $model->id ?>/image.<?= $model->image . '?' . rand(); ?>" width="100" height="60"/>
                     <?php
                 }
             }

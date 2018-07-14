@@ -20,8 +20,7 @@ $this->params['breadcrumbs'][] = 'Update';
 
                         </div>
                         <div class="panel-body">
-				<?=  Html::a('<i class="fa-th-list"></i><span> Manage Contact</span>', ['index'], ['class' => 'btn btn-warning  btn-icon btn-icon-standalone']) ?>
-                                <div class="panel-body"><div class="contact-create">
+				<div class="panel-body"><div class="contact-create">
 						<?= $this->render('_form', [
                                                 'model' => $model,
                                                 ]) ?>

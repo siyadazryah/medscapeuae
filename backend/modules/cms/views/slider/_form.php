@@ -34,7 +34,7 @@ use yii\widgets\ActiveForm;
     <div class="row">
 
         <div class='col-md-6 col-sm-6 col-xs-12 left_padd'>    
-            <?= $form->field($model, 'image', ['options' => ['class' => 'form-group'], 'template' => '{label}<label>Image [ File Size :( 1920x766 ) ]</label>{input}{error}'])->fileInput(['maxlength' => true])->label(FALSE) ?>
+            <?= $form->field($model, 'image', ['options' => ['class' => 'form-group'], 'template' => '{label}<label>Image [ File Size :( 1920x900 ) ]</label>{input}{error}'])->fileInput(['maxlength' => true])->label(FALSE) ?>
             <?php
             if ($model->isNewRecord)
                 echo "";
@@ -42,7 +42,7 @@ use yii\widgets\ActiveForm;
                 if (!empty($model->image)) {
                     ?>
 
-                    <img src="<?= Yii::$app->homeUrl ?>../uploads/sliders/<?= $model->id ?>/small.<?= $model->image; ?>" width="100" height="40"/>
+                    <img src="<?= Yii::$app->homeUrl ?>../uploads/sliders/<?= $model->id ?>/small.<?= $model->image; ?>" width="100" height="47"/>
                     <?php
                 }
             }

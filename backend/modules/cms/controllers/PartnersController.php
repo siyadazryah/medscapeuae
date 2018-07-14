@@ -70,13 +70,13 @@ class PartnersController extends Controller {
             if ($model->validate() && $model->save()) {
                 if (!empty($image)) {
 
-                    $path = Yii::$app->basePath . '/../uploads/partners/' . $model->id . '/';
+                    $path = Yii::$app->basePath . '/../uploads/clients/' . $model->id . '/';
                     $size = [
-                        ['width' => 163, 'height' => 90, 'name' => 'image'],
+                        ['width' => 200, 'height' => 120, 'name' => 'image'],
                     ];
                     Yii::$app->UploadFile->UploadFile($model, $image, $path, $size);
                 }
-                Yii::$app->session->setFlash('success', "New Partners added Successfully");
+                Yii::$app->session->setFlash('success', "New Clients added Successfully");
                 return $this->redirect(['create']);
             }
         }return $this->render('create', [
@@ -102,14 +102,14 @@ class PartnersController extends Controller {
                 $model->image = $image_;
             if ($model->validate() && $model->save()) {
                 if (!empty($image)) {
-                    $path = Yii::$app->basePath . '/../uploads/partners/' . $model->id . '/';
+                    $path = Yii::$app->basePath . '/../uploads/clients/' . $model->id . '/';
                     $size = [
-                        ['width' => 163, 'height' => 90, 'name' => 'image'],
+                        ['width' => 200, 'height' => 120, 'name' => 'image'],
                     ];
                     Yii::$app->UploadFile->UploadFile($model, $image, $path, $size);
                 }
             }
-            Yii::$app->session->setFlash('success', "Brand Updated Successfully");
+            Yii::$app->session->setFlash('success', "Clients Updated Successfully");
              return $this->redirect(['index']);
         }
 

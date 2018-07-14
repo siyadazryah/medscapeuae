@@ -13,6 +13,10 @@ use yii\web\UploadedFile;
 use common\models\Slider;
 use common\models\HomeContent;
 use common\models\About;
+use common\models\Testimonial;
+use common\models\Partners;
+use common\models\Contact;
+use common\models\ContactForm;
 
 /**
  * Site controller
@@ -75,14 +79,14 @@ class SiteController extends Controller {
      * @return mixed
      */
     public function actionIndex() {
-//        $sliders = Slider::find()->where(['status' => '1'])->all();
-//        $testimonials = Testimonial::find()->where(['status' => '1'])->all();
+        $sliders = Slider::find()->where(['status' => '1'])->all();
+        $testimonials = Testimonial::find()->where(['status' => '1'])->all();
 //        $categories = Category::find()->where(['status' => '1'])->all();
 //        $home_content = HomeContent::findOne(1);
 //        $about = About::findOne(1);
 //        $contacts_content = Contact::findOne(1);
 //        $services = Services::find()->where(['status' => 1])->orderBy(['sort' => SORT_ASC])->all();
-//        $partners = Partners::find()->where(['status' => 1])->orderBy(['id' => SORT_ASC])->all();
+        $partners = Partners::find()->where(['status' => 1])->orderBy(['id' => SORT_ASC])->all();
 //        $home_services = HomePageService::find()->where(['status' => 1])->all();
 //        $model = new ContactForm();
 //        if ($model->load(Yii::$app->request->post())) {
@@ -93,15 +97,14 @@ class SiteController extends Controller {
 //            }
 //        }
         return $this->render('index', [
-//                    'sliders' => $sliders,
+                    'sliders' => $sliders,
 //                    'home_content' => $home_content,
-//                    'about' => $about,
-//                    'testimonials' => $testimonials,
+                    'testimonials' => $testimonials,
 //                    'categories' => $categories,
 //                    'model' => $model,
 //                    'contacts_content' => $contacts_content,
 //                    'services' => $services,
-//                    'partners' => $partners,
+                    'partners' => $partners,
 //                    'home_services' => $home_services,
         ]);
     }
@@ -130,10 +133,10 @@ class SiteController extends Controller {
       //     *
       //     * @return mixed
       // */
-    public function actionClients() {
-//        $categories = Category::find()->where(['status' => '1'])->all();
+   public function actionClients() {
+        $partners = Partners::find()->where(['status' => 1])->orderBy(['id' => SORT_ASC])->all();
         return $this->render('client', [
-//                    'categories' => $categories,
+                    'partners' => $partners,
         ]);
     }
 
@@ -142,20 +145,20 @@ class SiteController extends Controller {
       //     *
       //     * @return mixed
       // */
-    public function actionContact() {
-//        $contacts_content = Contact::findOne(1);
-//        $model = new ContactForm();
-//        if ($model->load(Yii::$app->request->post())) {
-//            $model->date = date('Y-m-d');
-//            if ($model->validate() && $model->save()) {
-//                $this->sendContactMail($model);
-//                Yii::$app->getSession()->setFlash('success', 'Your Enquiry Submitted Successfully');
-//                return $this->refresh();
-//            }
-//        }
+     public function actionContact() {
+        $contacts_content = Contact::findOne(1);
+        $model = new ContactForm();
+        if ($model->load(Yii::$app->request->post())) {
+            $model->date = date('Y-m-d');
+            if ($model->validate() && $model->save()) {
+                $this->sendContactMail($model);
+                Yii::$app->getSession()->setFlash('success', 'Your Enquiry Submitted Successfully');
+                return $this->refresh();
+            }
+        }
         return $this->render('contact', [
-//                    'model' => $model,
-//                    'contacts_content' => $contacts_content,
+                    'model' => $model,
+                    'contacts_content' => $contacts_content,
         ]);
     }
 

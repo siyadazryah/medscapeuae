@@ -82,7 +82,7 @@ class TestimonialController extends Controller {
                     $path = Yii::$app->basePath . '/../uploads/testimonials/' . $model->id . '/';
                     $size = [
 //                        ['width' => 100, 'height' => 100, 'name' => 'small'],
-                        ['width' => 100, 'height' => 100, 'name' => 'image'],
+                        ['width' => 168, 'height' => 168, 'name' => 'image'],
                     ];
                     Yii::$app->UploadFile->UploadFile($model, $image, $path, $size);
                 }
@@ -115,7 +115,7 @@ class TestimonialController extends Controller {
                     $path = Yii::$app->basePath . '/../uploads/testimonials/' . $model->id . '/';
                     $size = [
 //                        ['width' => 100, 'height' => 100, 'name' => 'small'],
-                        ['width' => 100, 'height' => 100, 'name' => 'image'],
+                        ['width' => 168, 'height' => 168, 'name' => 'image'],
                     ];
                     Yii::$app->UploadFile->UploadFile($model, $image, $path, $size);
                 }
