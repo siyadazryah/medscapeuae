@@ -107,13 +107,9 @@ class SiteController extends Controller {
     }
 
     public function actionAbout() {
-//        $about = About::findOne(1);
-//        $about_content = AboutContent::findOne(1);
-//        $testimonials = Testimonial::find()->where(['status' => '1'])->all();
+        $about = About::findOne(1);
         return $this->render('abouts', [
-//                    'about' => $about,
-//                    'about_content' => $about_content,
-//                    'testimonials' => $testimonials,
+                    'about' => $about,
         ]);
     }
 
@@ -128,6 +124,7 @@ class SiteController extends Controller {
 //                    'categories' => $categories,
         ]);
     }
+
     /**
       //     * Displays gallery page.
       //     *
@@ -185,6 +182,7 @@ class SiteController extends Controller {
 //                    'brand_content' => $brand_content,
         ]);
     }
+
     public function actionBrandExpertise() {
         $brands = Brand::find()->where(['status' => 1])->all();
         $brand_content = BrandContent::findOne(1);
@@ -208,8 +206,8 @@ class SiteController extends Controller {
 //        echo $message;exit;
 //        mail($to, $subject, $message, $headers);
     }
-    
-     public function actionSubscribeMail() {
+
+    public function actionSubscribeMail() {
         if (Yii::$app->request->isAjax) {
             $email = $_POST['email'];
             if (!empty($email)) {

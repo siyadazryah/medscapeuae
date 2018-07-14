@@ -8,23 +8,23 @@ use yii\data\ActiveDataProvider;
 use common\models\About;
 
 /**
- * AboutSearch represents the model behind the search form about `common\models\About`.
+ * AboutSearch represents the model behind the search form of `common\models\About`.
  */
 class AboutSearch extends About
 {
     /**
-     * @inheritdoc
+     * {@inheritdoc}
      */
     public function rules()
     {
         return [
             [['id', 'status', 'CB', 'UB'], 'integer'],
-            [['title', 'img_alt', 'content', 'image', 'title1', 'feature1', 'title2', 'feature2', 'title3', 'feature3', 'title4', 'feature4', 'DOC', 'DOU'], 'safe'],
+            [['about_content', 'our_vission', 'our_mission', 'DOC', 'DOU'], 'safe'],
         ];
     }
 
     /**
-     * @inheritdoc
+     * {@inheritdoc}
      */
     public function scenarios()
     {
@@ -67,18 +67,9 @@ class AboutSearch extends About
             'DOU' => $this->DOU,
         ]);
 
-        $query->andFilterWhere(['like', 'title', $this->title])
-            ->andFilterWhere(['like', 'img_alt', $this->img_alt])
-            ->andFilterWhere(['like', 'content', $this->content])
-            ->andFilterWhere(['like', 'image', $this->image])
-            ->andFilterWhere(['like', 'title1', $this->title1])
-            ->andFilterWhere(['like', 'feature1', $this->feature1])
-            ->andFilterWhere(['like', 'title2', $this->title2])
-            ->andFilterWhere(['like', 'feature2', $this->feature2])
-            ->andFilterWhere(['like', 'title3', $this->title3])
-            ->andFilterWhere(['like', 'feature3', $this->feature3])
-            ->andFilterWhere(['like', 'title4', $this->title4])
-            ->andFilterWhere(['like', 'feature4', $this->feature4]);
+        $query->andFilterWhere(['like', 'about_content', $this->about_content])
+            ->andFilterWhere(['like', 'our_vission', $this->our_vission])
+            ->andFilterWhere(['like', 'our_mission', $this->our_mission]);
 
         return $dataProvider;
     }

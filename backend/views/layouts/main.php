@@ -98,19 +98,8 @@ AppAsset::register($this);
                         </ul>
                     </li>
                     <li>
-                        <a href="">
-                            <i class="fa fa-hotel"></i>
-                            <span class="title">About</span>
-                        </a>
-                        <ul>
-                            <li>
-                                <?= Html::a('<i class="fa fa-angle-double-right"></i> About', ['/cms/about/update', 'id' => 1], ['class' => 'title']) ?>
-                            </li>
-                            <li>
-                                <?= Html::a('<i class="fa fa-angle-double-right"></i> About Content', ['/cms/about-content/update', 'id' => 1], ['class' => 'title']) ?>
-                            </li>
-                        </ul>
-                    </li>
+                                    <?= Html::a('<i class="fa fa-hotel"></i> About', ['/cms/about/update', 'id' => 1], ['class' => 'title']) ?>
+                                </li>
                     <li>
                         <a href="">
                             <i class="fa fa-photo"></i>
@@ -272,19 +261,8 @@ AppAsset::register($this);
                             </ul>
                         </li>
                         <li>
-                            <a href="">
-                                <i class="fa fa-hotel"></i>
-                                <span class="title">About</span>
-                            </a>
-                            <ul>
-                                <li>
-                                    <?= Html::a('<i class="fa fa-angle-double-right"></i> About', ['/cms/about/update', 'id' => 1], ['class' => 'title']) ?>
+                                    <?= Html::a('<i class="fa fa-hotel"></i> About', ['/cms/about/update', 'id' => 1], ['class' => 'title']) ?>
                                 </li>
-                                <li>
-                                    <?= Html::a('<i class="fa fa-angle-double-right"></i> About Content', ['/cms/about-content/update', 'id' => 1], ['class' => 'title']) ?>
-                                </li>
-                            </ul>
-                        </li>
                         <li>
                             <a href="">
                                 <i class="fa fa-photo"></i>

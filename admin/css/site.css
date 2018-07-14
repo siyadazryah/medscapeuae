@@ -268,7 +268,7 @@ form .form-group .form-control{
 }
 .sidebar-menu {
     width: 225px;
-    background: #395e9c;
+    background: #52c2df;
     border-right: none;
 }
 .sidebar-menu .main-menu {
@@ -276,9 +276,10 @@ form .form-group .form-control{
     padding-right: 0px;
 }
 .sidebar-menu .main-menu a {
-    color: #ffffff;
-    border-bottom: 1px solid #4574c7;
+    color: #000000;
+    border-bottom: 1px solid #00a4d2;
     padding: 13px 10px;
+    font-weight: 500;
 }
 .sidebar-menu .logo-env {
     padding: 9px 5px;
@@ -294,10 +295,10 @@ form .form-group .form-control{
     color: #419d87;
 }
 .sidebar-menu .main-menu a:hover {
-    background: #3c71ce;
+    background: #43aeca;
 }
 .sidebar-menu .main-menu ul {
-    background: #335186;
+    background: #44d0f5;
     /* border-bottom: 1px solid #444; */
 }
 @media screen and (min-width: 768px){
@@ -643,7 +644,7 @@ a {
     border-color: #395d9c;
 }
 .sidebar-menu .main-menu li.has-sub>a:before {
-    color: #fff;
+    color: #000;
 }
 .grid-view .glyphicon-trash{
     color: #395d9c;
@@ -1329,22 +1330,24 @@ input[type=checkbox], input[type=radio] {
     margin-bottom: 20px;
     list-style: none;
     margin-bottom: 0;
-    background: #395e9c;
+    background: #52c2df;
 }
 }
 @media screen and (max-width: 768px){
 .navbar.horizontal-menu .navbar-inner .navbar-nav a {
-    color: #ffffff;
-    border-bottom: 1px solid #4574c7;
+    color: #000000;
+    border-bottom: 1px solid #00a4d2;
     text-decoration: none;
     display: block;
     padding: 13px 5px;
+    font-weight: 500;
+    
 }
 }
 @media screen and (max-width: 768px){
 .navbar.horizontal-menu .navbar-inner .navbar-nav a:hover {
     color: #fff;
-    background: #4574c7;
+    background: #43aeca;
 }
 }
 .navbar-inner .navbar-nav a:hover {
@@ -1356,7 +1359,7 @@ input[type=checkbox], input[type=radio] {
 }   
 @media screen and (max-width: 768px){
 .navbar.horizontal-menu .navbar-inner .navbar-nav li.has-sub>a:before {
-    color: #fff;
+    color: #020202;
 }
 }
 /*****************************************************Navigation Bar End ***********************/

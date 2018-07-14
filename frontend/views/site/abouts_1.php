@@ -23,13 +23,13 @@ use yii\widgets\ActiveForm;
             <div class="col-sm-6">
                 <div class="cont-box">
                     <h3>Our Vision</h3>
-                    <p><?= $about->our_vission ?></p>
+                    <?= $about->our_vission ?>
                 </div>
             </div>
             <div class="col-sm-6">
                 <div class="cont-box">
                     <h3>Our Mission</h3>
-                    <p><?= $about->our_mission ?></p>
+                    <?= $about->our_mission ?>
                 </div>
             </div>
 

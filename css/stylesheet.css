@@ -1347,3 +1347,11 @@ a:focus {
 	display: none;
 	background: url(../images/icon/icon_top.png) no-repeat;
 }
+.in-about-section p {
+    font-size: 16px;
+    line-height: 30px;
+    color: #888;
+    font-weight: 300;
+    text-align: center;
+    margin-bottom: 20px;
+}
