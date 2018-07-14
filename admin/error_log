@@ -1,0 +1,270 @@
+[13-Jun-2017 06:52:23 UTC] An Error occurred while handling another error:
+exception 'ReflectionException' with message 'Method yii\widgets\BaseListView::yii\widgets\{closure}() does not exist' in /home/prideofkerala/public_html/demo/vendor/yiisoft/yii2/web/ErrorHandler.php:199
+Stack trace:
+#0 /home/prideofkerala/public_html/demo/vendor/yiisoft/yii2/web/ErrorHandler.php(199): ReflectionMethod->__construct('yii\\widgets\\Bas...', 'yii\\widgets\\{cl...')
+#1 /home/prideofkerala/public_html/demo/vendor/yiisoft/yii2/views/errorHandler/callStackItem.php(26): yii\web\ErrorHandler->addTypeLinks('yii\\widgets\\Bas...')
+#2 /home/prideofkerala/public_html/demo/vendor/yiisoft/yii2/base/View.php(328): require('/home/prideofke...')
+#3 /home/prideofkerala/public_html/demo/vendor/yiisoft/yii2/base/View.php(250): yii\base\View->renderPhpFile('/home/prideofke...', Array)
+#4 /home/prideofkerala/public_html/demo/vendor/yiisoft/yii2/web/ErrorHandler.php(253): yii\base\View->renderFile('@yii/views/erro...', Array, Object(yii\web\ErrorHandler))
+#5 /home/prideofkerala/public_html/demo/vendor/yiisoft/yii2/web/ErrorHandler.php(308): yii\web\ErrorHandler->renderFile('@yii/views/erro...', Array)
+#6 /home/prideofkerala/public_html/demo/vendor/yiisoft/yii2/views/errorHandler/exception.php(385): yii\web\ErrorHandler->renderCallStackItem(NULL, NULL, 'yii\\widgets\\Bas...', 'yii\\widgets\\{cl...', Array, 17)
+#7 /home/prideofkerala/public_html/demo/vendor/yiisoft/yii2/base/View.php(328): require('/home/prideofke...')
+#8 /home/prideofkerala/public_html/demo/vendor/yiisoft/yii2/base/View.php(250): yii\base\View->renderPhpFile('/home/prideofke...', Array)
+#9 /home/prideofkerala/public_html/demo/vendor/yiisoft/yii2/web/ErrorHandler.php(253): yii\base\View->renderFile('@yii/views/erro...', Array, Object(yii\web\ErrorHandler))
+#10 /home/prideofkerala/public_html/demo/vendor/yiisoft/yii2/web/ErrorHandler.php(114): yii\web\ErrorHandler->renderFile('@yii/views/erro...', Array)
+#11 /home/prideofkerala/public_html/demo/vendor/yiisoft/yii2/base/ErrorHandler.php(111): yii\web\ErrorHandler->renderException(Object(yii\db\Exception))
+#12 [internal function]: yii\base\ErrorHandler->handleException(Object(yii\db\Exception))
+#13 {main}
+Previous exception:
+exception 'yii\base\ErrorException' with message 'Error while sending QUERY packet. PID=320809' in /home/prideofkerala/public_html/demo/vendor/yiisoft/yii2/db/Command.php:902
+Stack trace:
+#0 [internal function]: yii\base\ErrorHandler->handleError(2, 'Error while sen...', '/home/prideofke...', 902, Array)
+#1 /home/prideofkerala/public_html/demo/vendor/yiisoft/yii2/db/Command.php(902): PDOStatement->execute()
+#2 /home/prideofkerala/public_html/demo/vendor/yiisoft/yii2/db/Command.php(388): yii\db\Command->queryInternal('<span class="st...', '<span class="nu...')
+#3 /home/prideofkerala/public_html/demo/vendor/yiisoft/yii2/db/Query.php(431): yii\db\Command->queryScalar()
+#4 /home/prideofkerala/public_html/demo/vendor/yiisoft/yii2/db/ActiveQuery.php(334): yii\db\Query->queryScalar('<span class="st...', '<span class="ke...')
+#5 /home/prideofkerala/public_html/demo/vendor/yiisoft/yii2/db/Query.php(319): yii\db\ActiveQuery->queryScalar('<span class="st...', '<span class="ke...')
+#6 /home/prideofkerala/public_html/demo/vendor/yiisoft/yii2/data/ActiveDataProvider.php(166): yii\db\Query->count('<span class="st...', '<span class="ke...')
+#7 /home/prideofkerala/public_html/demo/vendor/yiisoft/yii2/data/BaseDataProvider.php(149): yii\data\ActiveDataProvider->prepareTotalCount()
+#8 /home/prideofkerala/public_html/demo/vendor/yiisoft/yii2/data/ActiveDataProvider.php(106): yii\data\BaseDataProvider->getTotalCount()
+#9 /home/prideofkerala/public_html/demo/vendor/yiisoft/yii2/data/BaseDataProvider.php(81): yii\data\ActiveDataProvider->prepareModels()
+#10 /home/prideofkerala/public_html/demo/vendor/yiisoft/yii2/data/BaseDataProvider.php(94): yii\data\BaseDataProvider->prepare()
+#11 /home/prideofkerala/public_html/demo/vendor/yiisoft/yii2/data/BaseDataProvider.php(135): yii\data\BaseDataProvider->getModels()
+#12 /home/prideofkerala/public_html/demo/vendor/yiisoft/yii2/widgets/BaseListView.php(182): yii\data\BaseDataProvider->getCount()
+#13 /home/prideofkerala/public_html/demo/vendor/yiisoft/yii2/widgets/BaseListView.php(153): yii\widgets\BaseListView->renderSummary()
+#14 /home/prideofkerala/public_html/demo/vendor/yiisoft/yii2/grid/GridView.php(316): yii\widgets\BaseListView->renderSection('<span class="st...')
+#15 /home/prideofkerala/public_html/demo/vendor/yiisoft/yii2/widgets/BaseListView.php(130): yii\grid\GridView->renderSection('<span class="st...')
+#16 [internal function]: yii\widgets\BaseListView->yii\widgets\{closure}(Array)
+#17 /home/prideofkerala/public_html/demo/vendor/yiisoft/yii2/widgets/BaseListView.php(133): preg_replace_callback('/{\\w+}/', Object(Closure), '{summary}\n{item...')
+#18 /home/prideofkerala/public_html/demo/vendor/yiisoft/yii2/grid/GridView.php(291): yii\widgets\BaseListView->run()
+#19 /home/prideofkerala/public_html/demo/vendor/yiisoft/yii2/base/Widget.php(139): yii\grid\GridView->run()
+#20 /home/prideofkerala/public_html/demo/backend/modules/packages/views/package-content/create.php(67): yii\base\Widget::widget(Array)
+#21 /home/prideofkerala/public_html/demo/vendor/yiisoft/yii2/base/View.php(328): require('/home/prideofke...')
+#22 /home/prideofkerala/public_html/demo/vendor/yiisoft/yii2/base/View.php(250): yii\base\View->renderPhpFile('/home/prideofke...', Array)
+#23 /home/prideofkerala/public_html/demo/vendor/yiisoft/yii2/base/View.php(152): yii\base\View->renderFile('/home/prideofke...', Array, Object(backend\modules\packages\controllers\PackageContentController))
+#24 /home/prideofkerala/public_html/demo/vendor/yiisoft/yii2/base/Controller.php(381): yii\base\View->render('create', Array, Object(backend\modules\packages\controllers\PackageContentController))
+#25 /home/prideofkerala/public_html/demo/backend/modules/packages/controllers/PackageContentController.php(84): yii\base\Controller->render('create', Array)
+#26 [internal function]: backend\modules\packages\controllers\PackageContentController->actionContents('4')
+#27 /home/prideofkerala/public_html/demo/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array(Array, Array)
+#28 /home/prideofkerala/public_html/demo/vendor/yiisoft/yii2/base/Controller.php(156): yii\base\InlineAction->runWithParams(Array)
+#29 /home/prideofkerala/public_html/demo/vendor/yiisoft/yii2/base/Module.php(523): yii\base\Controller->runAction('contents', Array)
+#30 /home/prideofkerala/public_html/demo/vendor/yiisoft/yii2/web/Application.php(102): yii\base\Module->runAction('packages/packag...', Array)
+#31 /home/prideofkerala/public_html/demo/vendor/yiisoft/yii2/base/Application.php(380): yii\web\Application->handleRequest(Object(yii\web\Request))
+#32 /home/prideofkerala/public_html/demo/admin/index.php(15): yii\base\Application->run()
+#33 {main}
+
+Next exception 'yii\db\Exception' with message 'Error while sending QUERY packet. PID=320809
+The SQL being executed was: SELECT COUNT(*) FROM `package_content` WHERE `package_id`='4'' in /home/prideofkerala/public_html/demo/vendor/yiisoft/yii2/db/Schema.php:636
+Stack trace:
+#0 /home/prideofkerala/public_html/demo/vendor/yiisoft/yii2/db/Command.php(917): yii\db\Schema->convertException(Object(yii\base\ErrorException), 'SELECT COUNT(*)...')
+#1 /home/prideofkerala/public_html/demo/vendor/yiisoft/yii2/db/Command.php(388): yii\db\Command->queryInternal('<span class="st...', '<span class="nu...')
+#2 /home/prideofkerala/public_html/demo/vendor/yiisoft/yii2/db/Query.php(431): yii\db\Command->queryScalar()
+#3 /home/prideofkerala/public_html/demo/vendor/yiisoft/yii2/db/ActiveQuery.php(334): yii\db\Query->queryScalar('<span class="st...', '<span class="ke...')
+#4 /home/prideofkerala/public_html/demo/vendor/yiisoft/yii2/db/Query.php(319): yii\db\ActiveQuery->queryScalar('<span class="st...', '<span class="ke...')
+#5 /home/prideofkerala/public_html/demo/vendor/yiisoft/yii2/data/ActiveDataProvider.php(166): yii\db\Query->count('<span class="st...', '<span class="ke...')
+#6 /home/prideofkerala/public_html/demo/vendor/yiisoft/yii2/data/BaseDataProvider.php(149): yii\data\ActiveDataProvider->prepareTotalCount()
+#7 /home/prideofkerala/public_html/demo/vendor/yiisoft/yii2/data/ActiveDataProvider.php(106): yii\data\BaseDataProvider->getTotalCount()
+#8 /home/prideofkerala/public_html/demo/vendor/yiisoft/yii2/data/BaseDataProvider.php(81): yii\data\ActiveDataProvider->prepareModels()
+#9 /home/prideofkerala/public_html/demo/vendor/yiisoft/yii2/data/BaseDataProvider.php(94): yii\data\BaseDataProvider->prepare()
+#10 /home/prideofkerala/public_html/demo/vendor/yiisoft/yii2/data/BaseDataProvider.php(135): yii\data\BaseDataProvider->getModels()
+#11 /home/prideofkerala/public_html/demo/vendor/yiisoft/yii2/widgets/BaseListView.php(182): yii\data\BaseDataProvider->getCount()
+#12 /home/prideofkerala/public_html/demo/vendor/yiisoft/yii2/widgets/BaseListView.php(153): yii\widgets\BaseListView->renderSummary()
+#13 /home/prideofkerala/public_html/demo/vendor/yiisoft/yii2/grid/GridView.php(316): yii\widgets\BaseListView->renderSection('<span class="st...')
+#14 /home/prideofkerala/public_html/demo/vendor/yiisoft/yii2/widgets/BaseListView.php(130): yii\grid\GridView->renderSection('<span class="st...')
+#15 [internal function]: yii\widgets\BaseListView->yii\widgets\{closure}(Array)
+#16 /home/prideofkerala/public_html/demo/vendor/yiisoft/yii2/widgets/BaseListView.php(133): preg_replace_callback('/{\\w+}/', Object(Closure), '{summary}\n{item...')
+#17 /home/prideofkerala/public_html/demo/vendor/yiisoft/yii2/grid/GridView.php(291): yii\widgets\BaseListView->run()
+#18 /home/prideofkerala/public_html/demo/vendor/yiisoft/yii2/base/Widget.php(139): yii\grid\GridView->run()
+#19 /home/prideofkerala/public_html/demo/backend/modules/packages/views/package-content/create.php(67): yii\base\Widget::widget(Array)
+#20 /home/prideofkerala/public_html/demo/vendor/yiisoft/yii2/base/View.php(328): require('/home/prideofke...')
+#21 /home/prideofkerala/public_html/demo/vendor/yiisoft/yii2/base/View.php(250): yii\base\View->renderPhpFile('/home/prideofke...', Array)
+#22 /home/prideofkerala/public_html/demo/vendor/yiisoft/yii2/base/View.php(152): yii\base\View->renderFile('/home/prideofke...', Array, Object(backend\modules\packages\controllers\PackageContentController))
+#23 /home/prideofkerala/public_html/demo/vendor/yiisoft/yii2/base/Controller.php(381): yii\base\View->render('create', Array, Object(backend\modules\packages\controllers\PackageContentController))
+#24 /home/prideofkerala/public_html/demo/backend/modules/packages/controllers/PackageContentController.php(84): yii\base\Controller->render('create', Array)
+#25 [internal function]: backend\modules\packages\controllers\PackageContentController->actionContents('4')
+#26 /home/prideofkerala/public_html/demo/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array(Array, Array)
+#27 /home/prideofkerala/public_html/demo/vendor/yiisoft/yii2/base/Controller.php(156): yii\base\InlineAction->runWithParams(Array)
+#28 /home/prideofkerala/public_html/demo/vendor/yiisoft/yii2/base/Module.php(523): yii\base\Controller->runAction('contents', Array)
+#29 /home/prideofkerala/public_html/demo/vendor/yiisoft/yii2/web/Application.php(102): yii\base\Module->runAction('packages/packag...', Array)
+#30 /home/prideofkerala/public_html/demo/vendor/yiisoft/yii2/base/Application.php(380): yii\web\Application->handleRequest(Object(yii\web\Request))
+#31 /home/prideofkerala/public_html/demo/admin/index.php(15): yii\base\Application->run()
+#32 {main}
+Additional Information:
+
+$_SERVER = [
+    'CONTEXT_DOCUMENT_ROOT' => '/home/prideofkerala/public_html',
+    'CONTEXT_PREFIX' => '',
+    'DOCUMENT_ROOT' => '/home/prideofkerala/public_html',
+    'GATEWAY_INTERFACE' => 'CGI/1.1',
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch',
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.8',
+    'HTTP_CONNECTION' => 'keep-alive',
+    'HTTP_COOKIE' => 'timezone=Asia/Kolkata; _csrf-backend=ac11e2b69e509f91662357e2c75a2e22a2602cf128a7733237f916b1b0295522a%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22NwTg1jvXhV0Opy4EO9r3TMd_okgfbv4_%22%3B%7D; advanced-backend=oosa47vmt27s0nplenm1s8m3n3; advanced-frontend=abmao07t7v7g66laj30r6dvva4; _csrf-frontend=d157b5df47295c7fa743b97153c581bce8b9f19e4ce157ff65a583374a5720e1a%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%226y92rDP2g2wHR5Pmu0eot0DLOkf_Cg72%22%3B%7D',
+    'HTTP_HOST' => 'prideofkerala.com',
+    'HTTP_REFERER' => 'http://prideofkerala.com/demo/admin/packages/package-slider/sliders?id=4',
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1',
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.36',
+    'PATH' => '/bin:/usr/bin',
+    'QUERY_STRING' => 'packages/package-content/contents&id=4',
+    'REDIRECT_QUERY_STRING' => 'packages/package-content/contents&id=4',
+    'REDIRECT_STATUS' => '200',
+    'REDIRECT_UNIQUE_ID' => 'WT@LeIAF9nmItK@k3IBuBwAAAHE',
+    'REDIRECT_URL' => '/demo/admin/packages/package-content/contents',
+    'REMOTE_ADDR' => '122.174.206.28',
+    'REMOTE_PORT' => '56276',
+    'REQUEST_METHOD' => 'GET',
+    'REQUEST_SCHEME' => 'http',
+    'REQUEST_URI' => '/demo/admin/packages/package-content/contents?id=4',
+    'SCRIPT_FILENAME' => '/home/prideofkerala/public_html/demo/admin/index.php',
+    'SCRIPT_NAME' => '/demo/admin/index.php',
+    'SERVER_ADDR' => '184.164.158.253',
+    'SERVER_ADMIN' => 'webmaster@prideofkerala.com',
+    'SERVER_NAME' => 'prideofkerala.com',
+    'SERVER_PORT' => '80',
+    'SERVER_PROTOCOL' => 'HTTP/1.1',
+    'SERVER_SIGNATURE' => '',
+    'SERVER_SOFTWARE' => 'Apache',
+    'TZ' => 'Asia/Kolkata',
+    'UNIQUE_ID' => 'WT@LeIAF9nmItK@k3IBuBwAAAHE',
+    'PHP_SELF' => '/demo/admin/index.php',
+    'REQUEST_TIME_FLOAT' => 1497336696.275103092193603515625,
+    'REQUEST_TIME' => 1497336696,
+    'argv' => [
+        'packages/package-content/contents&id=4',
+    ],
+    'argc' => 1,
+]
+[30-Jan-2018 10:28:00 UTC] An Error occurred while handling another error:
+exception 'yii\base\InvalidParamException' with message 'The HTTP status code is invalid: 2000' in /home/azryah/public_html/apachia/vendor/yiisoft/yii2/web/Response.php:282
+Stack trace:
+#0 /home/azryah/public_html/apachia/vendor/yiisoft/yii2/web/ErrorHandler.php(123): yii\web\Response->setStatusCode(2000)
+#1 /home/azryah/public_html/apachia/vendor/yiisoft/yii2/base/ErrorHandler.php(111): yii\web\ErrorHandler->renderException(Object(yii\web\HttpException))
+#2 [internal function]: yii\base\ErrorHandler->handleException(Object(yii\web\HttpException))
+#3 {main}
+Previous exception:
+exception 'yii\web\HttpException' with message 'Session Expired.' in /home/azryah/public_html/apachia/backend/controllers/SiteController.php:107
+Stack trace:
+#0 [internal function]: backend\controllers\SiteController->actionHome()
+#1 /home/azryah/public_html/apachia/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array(Array, Array)
+#2 /home/azryah/public_html/apachia/vendor/yiisoft/yii2/base/Controller.php(156): yii\base\InlineAction->runWithParams(Array)
+#3 /home/azryah/public_html/apachia/vendor/yiisoft/yii2/base/Module.php(523): yii\base\Controller->runAction('home', Array)
+#4 /home/azryah/public_html/apachia/vendor/yiisoft/yii2/web/Application.php(102): yii\base\Module->runAction('site/home', Array)
+#5 /home/azryah/public_html/apachia/vendor/yiisoft/yii2/base/Application.php(380): yii\web\Application->handleRequest(Object(yii\web\Request))
+#6 /home/azryah/public_html/apachia/admin/index.php(15): yii\base\Application->run()
+#7 {main}
+$_SERVER = [
+    'CONTEXT_DOCUMENT_ROOT' => '/home/azryah/public_html',
+    'CONTEXT_PREFIX' => '',
+    'DOCUMENT_ROOT' => '/home/azryah/public_html',
+    'GATEWAY_INTERFACE' => 'CGI/1.1',
+    'HTTP_ACCEPT' => '*/*',
+    'HTTP_ACCEPT_CHARSET' => 'ISO-8859-1;utf-8;q=0.7,*;q=0.7',
+    'HTTP_ACCEPT_ENCODING' => 'gzip,deflate',
+    'HTTP_CONNECTION' => 'Close',
+    'HTTP_HOST' => 'azryah.com',
+    'HTTP_PROXY_CONNECTION' => 'Close',
+    'HTTP_REFERER' => 'http://azryah.com/apachia/admin',
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; WOW64; rv:33.0) Gecko/20100101 Firefox/33.0',
+    'PATH' => '/bin:/usr/bin',
+    'QUERY_STRING' => 'site/home',
+    'REDIRECT_QUERY_STRING' => 'site/home',
+    'REDIRECT_SCRIPT_URI' => 'http://azryah.com/apachia/admin/site/home',
+    'REDIRECT_SCRIPT_URL' => '/apachia/admin/site/home',
+    'REDIRECT_STATUS' => '200',
+    'REDIRECT_UNIQUE_ID' => 'WnBIsGBRmEGSRYuOnOyztwAAACE',
+    'REDIRECT_URL' => '/apachia/admin/site/home',
+    'REMOTE_ADDR' => '162.243.69.215',
+    'REMOTE_PORT' => '48858',
+    'REQUEST_METHOD' => 'GET',
+    'REQUEST_SCHEME' => 'http',
+    'REQUEST_URI' => '/apachia/admin/site/home',
+    'SCRIPT_FILENAME' => '/home/azryah/public_html/apachia/admin/index.php',
+    'SCRIPT_NAME' => '/apachia/admin/index.php',
+    'SCRIPT_URI' => 'http://azryah.com/apachia/admin/site/home',
+    'SCRIPT_URL' => '/apachia/admin/site/home',
+    'SERVER_ADDR' => '184.164.158.253',
+    'SERVER_ADMIN' => 'webmaster@azryah.com',
+    'SERVER_NAME' => 'azryah.com',
+    'SERVER_PORT' => '80',
+    'SERVER_PROTOCOL' => 'HTTP/1.1',
+    'SERVER_SIGNATURE' => '',
+    'SERVER_SOFTWARE' => 'Apache',
+    'TZ' => 'Asia/Kolkata',
+    'UNIQUE_ID' => 'WnBIsGBRmEGSRYuOnOyztwAAACE',
+    'PHP_SELF' => '/apachia/admin/index.php',
+    'REQUEST_TIME_FLOAT' => 1517308080.3099730014801025390625,
+    'REQUEST_TIME' => 1517308080,
+    'argv' => [
+        'site/home',
+    ],
+    'argc' => 1,
+]
+[31-Jan-2018 06:57:14 UTC] An Error occurred while handling another error:
+exception 'yii\base\InvalidParamException' with message 'The HTTP status code is invalid: 2000' in /home/azryah/public_html/apachia/vendor/yiisoft/yii2/web/Response.php:282
+Stack trace:
+#0 /home/azryah/public_html/apachia/vendor/yiisoft/yii2/web/ErrorHandler.php(123): yii\web\Response->setStatusCode(2000)
+#1 /home/azryah/public_html/apachia/vendor/yiisoft/yii2/base/ErrorHandler.php(111): yii\web\ErrorHandler->renderException(Object(yii\web\HttpException))
+#2 [internal function]: yii\base\ErrorHandler->handleException(Object(yii\web\HttpException))
+#3 {main}
+Previous exception:
+exception 'yii\web\HttpException' with message 'Session Expired.' in /home/azryah/public_html/apachia/backend/controllers/SiteController.php:107
+Stack trace:
+#0 [internal function]: backend\controllers\SiteController->actionHome()
+#1 /home/azryah/public_html/apachia/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array(Array, Array)
+#2 /home/azryah/public_html/apachia/vendor/yiisoft/yii2/base/Controller.php(156): yii\base\InlineAction->runWithParams(Array)
+#3 /home/azryah/public_html/apachia/vendor/yiisoft/yii2/base/Module.php(523): yii\base\Controller->runAction('home', Array)
+#4 /home/azryah/public_html/apachia/vendor/yiisoft/yii2/web/Application.php(102): yii\base\Module->runAction('site/home', Array)
+#5 /home/azryah/public_html/apachia/vendor/yiisoft/yii2/base/Application.php(380): yii\web\Application->handleRequest(Object(yii\web\Request))
+#6 /home/azryah/public_html/apachia/admin/index.php(15): yii\base\Application->run()
+#7 {main}
+$_SERVER = [
+    'CONTEXT_DOCUMENT_ROOT' => '/home/azryah/public_html',
+    'CONTEXT_PREFIX' => '',
+    'DOCUMENT_ROOT' => '/home/azryah/public_html',
+    'GATEWAY_INTERFACE' => 'CGI/1.1',
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate',
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.9',
+    'HTTP_CONNECTION' => 'keep-alive',
+    'HTTP_COOKIE' => '_csrf-backend=1f3f09293e7afcb5275b4f995046d317d7b6b32a5bda3b0d0de17ea08c2cb438a%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22YQeZEMPpRNYCuiXfQEXtl-f8IqVLr4-k%22%3B%7D; advanced-backend=6of98r5u65noob96lckmp9uvf5',
+    'HTTP_HOST' => 'azryah.com',
+    'HTTP_REFERER' => 'http://azryah.com/apachia/admin/',
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1',
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36',
+    'PATH' => '/bin:/usr/bin',
+    'QUERY_STRING' => 'site/home',
+    'REDIRECT_QUERY_STRING' => 'site/home',
+    'REDIRECT_SCRIPT_URI' => 'http://azryah.com/apachia/admin/site/home',
+    'REDIRECT_SCRIPT_URL' => '/apachia/admin/site/home',
+    'REDIRECT_STATUS' => '200',
+    'REDIRECT_UNIQUE_ID' => 'WnFoyVc3DJ49aDjs2JZbcgAAAMM',
+    'REDIRECT_URL' => '/apachia/admin/site/home',
+    'REMOTE_ADDR' => '122.178.55.208',
+    'REMOTE_PORT' => '49821',
+    'REQUEST_METHOD' => 'GET',
+    'REQUEST_SCHEME' => 'http',
+    'REQUEST_URI' => '/apachia/admin/site/home',
+    'SCRIPT_FILENAME' => '/home/azryah/public_html/apachia/admin/index.php',
+    'SCRIPT_NAME' => '/apachia/admin/index.php',
+    'SCRIPT_URI' => 'http://azryah.com/apachia/admin/site/home',
+    'SCRIPT_URL' => '/apachia/admin/site/home',
+    'SERVER_ADDR' => '184.164.158.253',
+    'SERVER_ADMIN' => 'webmaster@azryah.com',
+    'SERVER_NAME' => 'azryah.com',
+    'SERVER_PORT' => '80',
+    'SERVER_PROTOCOL' => 'HTTP/1.1',
+    'SERVER_SIGNATURE' => '',
+    'SERVER_SOFTWARE' => 'Apache',
+    'TZ' => 'Asia/Kolkata',
+    'UNIQUE_ID' => 'WnFoyVc3DJ49aDjs2JZbcgAAAMM',
+    'PHP_SELF' => '/apachia/admin/index.php',
+    'REQUEST_TIME_FLOAT' => 1517381833.94989490509033203125,
+    'REQUEST_TIME' => 1517381833,
+    'argv' => [
+        'site/home',
+    ],
+    'argc' => 1,
+]
+[14-Feb-2018 11:25:22 UTC] PHP Fatal error:  Class 'common\models\FreeResourcesSubjects' not found in /home/azryah/public_html/apachia/backend/modules/cms/views/free-resources/_form.php on line 11
+[14-Feb-2018 11:25:43 UTC] PHP Fatal error:  Class 'common\models\FreeResourcesSubjects' not found in /home/azryah/public_html/apachia/backend/modules/cms/views/free-resources/_form.php on line 11

@@ -1,0 +1,606 @@
+[27-Sep-2017 10:46:54 UTC] PHP Notice:  Undefined variable: category_main in /home/coralperfumes/public_html/frontend/views/layouts/main.php on line 205
+[27-Sep-2017 10:46:54 UTC] PHP Notice:  Undefined variable: category_main in /home/coralperfumes/public_html/frontend/views/layouts/main.php on line 206
+[27-Sep-2017 10:47:34 UTC] PHP Notice:  Undefined variable: main_categry in /home/coralperfumes/public_html/frontend/views/layouts/main.php on line 205
+[27-Sep-2017 10:47:34 UTC] PHP Notice:  Undefined variable: main_categry in /home/coralperfumes/public_html/frontend/views/layouts/main.php on line 206
+[27-Sep-2017 10:47:37 UTC] PHP Notice:  Undefined variable: main_categry in /home/coralperfumes/public_html/frontend/views/layouts/main.php on line 205
+[27-Sep-2017 10:47:37 UTC] PHP Notice:  Undefined variable: main_categry in /home/coralperfumes/public_html/frontend/views/layouts/main.php on line 206
+[27-Sep-2017 10:47:41 UTC] PHP Notice:  Undefined variable: main_categry in /home/coralperfumes/public_html/frontend/views/layouts/main.php on line 205
+[27-Sep-2017 10:47:41 UTC] PHP Notice:  Undefined variable: main_categry in /home/coralperfumes/public_html/frontend/views/layouts/main.php on line 206
+[27-Sep-2017 10:47:41 UTC] PHP Notice:  Undefined variable: main_categry in /home/coralperfumes/public_html/frontend/views/layouts/main.php on line 205
+[27-Sep-2017 10:47:41 UTC] PHP Notice:  Undefined variable: main_categry in /home/coralperfumes/public_html/frontend/views/layouts/main.php on line 206
+[27-Sep-2017 10:47:46 UTC] PHP Notice:  Undefined variable: main_categry in /home/coralperfumes/public_html/frontend/views/layouts/main.php on line 205
+[27-Sep-2017 10:47:46 UTC] PHP Notice:  Undefined variable: main_categry in /home/coralperfumes/public_html/frontend/views/layouts/main.php on line 206
+[04-Oct-2017 04:17:50 UTC] PHP Warning:  require(/home/coralperfumes/public_html/frontend/config/bootstrap.php): failed to open stream: No such file or directory in /home/coralperfumes/public_html/index.php on line 8
+[04-Oct-2017 04:17:50 UTC] PHP Fatal error:  require(): Failed opening required '/home/coralperfumes/public_html/frontend/config/bootstrap.php' (include_path='.:/opt/alt/php71/usr/share/pear') in /home/coralperfumes/public_html/index.php on line 8
+[04-Oct-2017 04:17:55 UTC] PHP Warning:  require(/home/coralperfumes/public_html/frontend/config/bootstrap.php): failed to open stream: No such file or directory in /home/coralperfumes/public_html/index.php on line 8
+[04-Oct-2017 04:17:55 UTC] PHP Fatal error:  require(): Failed opening required '/home/coralperfumes/public_html/frontend/config/bootstrap.php' (include_path='.:/opt/alt/php71/usr/share/pear') in /home/coralperfumes/public_html/index.php on line 8
+[09-Oct-2017 11:18:46 UTC] PHP Warning:  require(/home/coralperfumes/public_html/frontend/config/bootstrap.php): failed to open stream: No such file or directory in /home/coralperfumes/public_html/index.php on line 8
+[09-Oct-2017 11:18:46 UTC] PHP Fatal error:  require(): Failed opening required '/home/coralperfumes/public_html/frontend/config/bootstrap.php' (include_path='.:/opt/alt/php71/usr/share/pear') in /home/coralperfumes/public_html/index.php on line 8
+[09-Oct-2017 11:18:47 UTC] PHP Warning:  require(/home/coralperfumes/public_html/frontend/config/bootstrap.php): failed to open stream: No such file or directory in /home/coralperfumes/public_html/index.php on line 8
+[09-Oct-2017 11:18:47 UTC] PHP Fatal error:  require(): Failed opening required '/home/coralperfumes/public_html/frontend/config/bootstrap.php' (include_path='.:/opt/alt/php71/usr/share/pear') in /home/coralperfumes/public_html/index.php on line 8
+[09-Oct-2017 11:18:50 UTC] PHP Warning:  require(/home/coralperfumes/public_html/frontend/config/bootstrap.php): failed to open stream: No such file or directory in /home/coralperfumes/public_html/index.php on line 8
+[09-Oct-2017 11:18:50 UTC] PHP Fatal error:  require(): Failed opening required '/home/coralperfumes/public_html/frontend/config/bootstrap.php' (include_path='.:/opt/alt/php71/usr/share/pear') in /home/coralperfumes/public_html/index.php on line 8
+[09-Oct-2017 11:18:51 UTC] PHP Warning:  require(/home/coralperfumes/public_html/frontend/config/bootstrap.php): failed to open stream: No such file or directory in /home/coralperfumes/public_html/index.php on line 8
+[09-Oct-2017 11:18:51 UTC] PHP Fatal error:  require(): Failed opening required '/home/coralperfumes/public_html/frontend/config/bootstrap.php' (include_path='.:/opt/alt/php71/usr/share/pear') in /home/coralperfumes/public_html/index.php on line 8
+[09-Oct-2017 11:18:52 UTC] PHP Warning:  require(/home/coralperfumes/public_html/frontend/config/bootstrap.php): failed to open stream: No such file or directory in /home/coralperfumes/public_html/index.php on line 8
+[09-Oct-2017 11:18:52 UTC] PHP Fatal error:  require(): Failed opening required '/home/coralperfumes/public_html/frontend/config/bootstrap.php' (include_path='.:/opt/alt/php71/usr/share/pear') in /home/coralperfumes/public_html/index.php on line 8
+[09-Oct-2017 11:19:53 UTC] An Error occurred while handling another error:
+Error: Class 'common\models\CmsOthers' not found in /home/coralperfumes/public_html/frontend/views/layouts/main.php:51
+Stack trace:
+#0 /home/coralperfumes/public_html/vendor/yiisoft/yii2/base/View.php(330): require()
+#1 /home/coralperfumes/public_html/vendor/yiisoft/yii2/base/View.php(250): yii\base\View->renderPhpFile('/home/coralperf...', Array)
+#2 /home/coralperfumes/public_html/vendor/yiisoft/yii2/base/Controller.php(396): yii\base\View->renderFile('/home/coralperf...', Array, Object(frontend\controllers\SiteController))
+#3 /home/coralperfumes/public_html/vendor/yiisoft/yii2/base/Controller.php(382): yii\base\Controller->renderContent('<div class="sit...')
+#4 /home/coralperfumes/public_html/vendor/yiisoft/yii2/web/ErrorAction.php(128): yii\base\Controller->render('error', Array)
+#5 /home/coralperfumes/public_html/vendor/yiisoft/yii2/web/ErrorAction.php(107): yii\web\ErrorAction->renderHtmlResponse()
+#6 [internal function]: yii\web\ErrorAction->run()
+#7 /home/coralperfumes/public_html/vendor/yiisoft/yii2/base/Action.php(94): call_user_func_array(Array, Array)
+#8 /home/coralperfumes/public_html/vendor/yiisoft/yii2/base/Controller.php(156): yii\base\Action->runWithParams(Array)
+#9 /home/coralperfumes/public_html/vendor/yiisoft/yii2/base/Module.php(523): yii\base\Controller->runAction('error', Array)
+#10 /home/coralperfumes/public_html/vendor/yiisoft/yii2/web/ErrorHandler.php(97): yii\base\Module->runAction('site/error')
+#11 /home/coralperfumes/public_html/vendor/yiisoft/yii2/base/ErrorHandler.php(111): yii\web\ErrorHandler->renderException(Object(Error))
+#12 [internal function]: yii\base\ErrorHandler->handleException(Object(Error))
+#13 {main}
+Previous exception:
+Error: Class 'common\models\ProductSearch' not found in /home/coralperfumes/public_html/frontend/controllers/ProductController.php:26
+Stack trace:
+#0 [internal function]: frontend\controllers\ProductController->actionIndex('bvlgari', NULL, NULL, NULL, NULL)
+#1 /home/coralperfumes/public_html/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array(Array, Array)
+#2 /home/coralperfumes/public_html/vendor/yiisoft/yii2/base/Controller.php(156): yii\base\InlineAction->runWithParams(Array)
+#3 /home/coralperfumes/public_html/vendor/yiisoft/yii2/base/Module.php(523): yii\base\Controller->runAction('index', Array)
+#4 /home/coralperfumes/public_html/vendor/yiisoft/yii2/web/Application.php(102): yii\base\Module->runAction('product/index', Array)
+#5 /home/coralperfumes/public_html/vendor/yiisoft/yii2/base/Application.php(380): yii\web\Application->handleRequest(Object(yii\web\Request))
+#6 /home/coralperfumes/public_html/index.php(17): yii\base\Application->run()
+#7 {main}
+$_SERVER = [
+    'PATH' => '/usr/local/jdk/bin:/usr/kerberos/sbin:/usr/kerberos/bin:/usr/local/sbin:/usr/local/bin:/sbin:/bin:/usr/sbin:/usr/bin:/usr/X11R6/bin:/usr/local/bin:/usr/X11R6/bin:/root/bin:/opt/bin',
+    'SCRIPT_NAME' => '/index.php',
+    'REQUEST_URI' => '/bvlgari',
+    'QUERY_STRING' => 'bvlgari',
+    'REQUEST_METHOD' => 'GET',
+    'SERVER_PROTOCOL' => 'HTTP/1.1',
+    'GATEWAY_INTERFACE' => 'CGI/1.1',
+    'REDIRECT_QUERY_STRING' => 'bvlgari',
+    'REDIRECT_URL' => '/bvlgari',
+    'REMOTE_PORT' => '59917',
+    'SCRIPT_FILENAME' => '/home/coralperfumes/public_html/index.php',
+    'SERVER_ADMIN' => 'webmaster@perfumedunia.com',
+    'CONTEXT_DOCUMENT_ROOT' => '/home/coralperfumes/public_html',
+    'CONTEXT_PREFIX' => '',
+    'REQUEST_SCHEME' => 'http',
+    'DOCUMENT_ROOT' => '/home/coralperfumes/public_html',
+    'REMOTE_ADDR' => '122.174.72.72',
+    'SERVER_PORT' => '80',
+    'SERVER_ADDR' => '148.66.136.67',
+    'SERVER_NAME' => 'perfumedunia.com',
+    'SERVER_SOFTWARE' => 'Apache',
+    'SERVER_SIGNATURE' => '',
+    'LD_LIBRARY_PATH' => '/usr/local/apache/lib',
+    'HTTP_COOKIE' => '_csrf-frontend=73d49fd74cb2b3ec245f79f081a7ea85e49bb4a18e277d5eabe4fab396737741a%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22%602%B1%D5%3B%88%FC%2F%AF%12%ADR_%BF%BCq%D2%2C%9B%3ChCk%8ENB%E7%8C%09sG%E1%22%3B%7D; advanced-frontend=58698e02059af2ee4a77a2eb5b5a4903; _identity-frontend=b99fc665b686e679be093f7ff3c17ed590fb4c66cd65b5d95b9cdf8fcfaca242a%3A2%3A%7Bi%3A0%3Bs%3A18%3A%22_identity-frontend%22%3Bi%3A1%3Bs%3A14%3A%22%5B3%2C%22%22%2C2592000%5D%22%3B%7D',
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.8',
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate',
+    'HTTP_REFERER' => 'http://perfumedunia.com/',
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/61.0.3163.100 Safari/537.36',
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1',
+    'HTTP_CONNECTION' => 'close',
+    'HTTP_HOST' => 'perfumedunia.com',
+    'UNIQUE_ID' => 'WdtbWZRCkYQAD-c4J4EAAACN',
+    'REDIRECT_STATUS' => '200',
+    'REDIRECT_UNIQUE_ID' => 'WdtbWZRCkYQAD-c4J4EAAACN',
+    'FCGI_ROLE' => 'RESPONDER',
+    'PHP_SELF' => '/index.php',
+    'REQUEST_TIME_FLOAT' => 1507547993.8707840442657470703125,
+    'REQUEST_TIME' => 1507547993,
+]
+[09-Oct-2017 11:19:57 UTC] An Error occurred while handling another error:
+Error: Class 'common\models\CmsOthers' not found in /home/coralperfumes/public_html/frontend/views/layouts/main.php:51
+Stack trace:
+#0 /home/coralperfumes/public_html/vendor/yiisoft/yii2/base/View.php(330): require()
+#1 /home/coralperfumes/public_html/vendor/yiisoft/yii2/base/View.php(250): yii\base\View->renderPhpFile('/home/coralperf...', Array)
+#2 /home/coralperfumes/public_html/vendor/yiisoft/yii2/base/Controller.php(396): yii\base\View->renderFile('/home/coralperf...', Array, Object(frontend\controllers\SiteController))
+#3 /home/coralperfumes/public_html/vendor/yiisoft/yii2/base/Controller.php(382): yii\base\Controller->renderContent('<div class="sit...')
+#4 /home/coralperfumes/public_html/vendor/yiisoft/yii2/web/ErrorAction.php(128): yii\base\Controller->render('error', Array)
+#5 /home/coralperfumes/public_html/vendor/yiisoft/yii2/web/ErrorAction.php(107): yii\web\ErrorAction->renderHtmlResponse()
+#6 [internal function]: yii\web\ErrorAction->run()
+#7 /home/coralperfumes/public_html/vendor/yiisoft/yii2/base/Action.php(94): call_user_func_array(Array, Array)
+#8 /home/coralperfumes/public_html/vendor/yiisoft/yii2/base/Controller.php(156): yii\base\Action->runWithParams(Array)
+#9 /home/coralperfumes/public_html/vendor/yiisoft/yii2/base/Module.php(523): yii\base\Controller->runAction('error', Array)
+#10 /home/coralperfumes/public_html/vendor/yiisoft/yii2/web/ErrorHandler.php(97): yii\base\Module->runAction('site/error')
+#11 /home/coralperfumes/public_html/vendor/yiisoft/yii2/base/ErrorHandler.php(111): yii\web\ErrorHandler->renderException(Object(Error))
+#12 [internal function]: yii\base\ErrorHandler->handleException(Object(Error))
+#13 {main}
+Previous exception:
+Error: Class 'common\models\About' not found in /home/coralperfumes/public_html/frontend/controllers/SiteController.php:96
+Stack trace:
+#0 [internal function]: frontend\controllers\SiteController->actionIndex()
+#1 /home/coralperfumes/public_html/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array(Array, Array)
+#2 /home/coralperfumes/public_html/vendor/yiisoft/yii2/base/Controller.php(156): yii\base\InlineAction->runWithParams(Array)
+#3 /home/coralperfumes/public_html/vendor/yiisoft/yii2/base/Module.php(523): yii\base\Controller->runAction('index', Array)
+#4 /home/coralperfumes/public_html/vendor/yiisoft/yii2/web/Application.php(102): yii\base\Module->runAction('site/index', Array)
+#5 /home/coralperfumes/public_html/vendor/yiisoft/yii2/base/Application.php(380): yii\web\Application->handleRequest(Object(yii\web\Request))
+#6 /home/coralperfumes/public_html/index.php(17): yii\base\Application->run()
+#7 {main}
+$_SERVER = [
+    'PATH' => '/usr/local/jdk/bin:/usr/kerberos/sbin:/usr/kerberos/bin:/usr/local/sbin:/usr/local/bin:/sbin:/bin:/usr/sbin:/usr/bin:/usr/X11R6/bin:/usr/local/bin:/usr/X11R6/bin:/root/bin:/opt/bin',
+    'SCRIPT_NAME' => '/index.php',
+    'REQUEST_URI' => '/',
+    'QUERY_STRING' => '',
+    'REQUEST_METHOD' => 'GET',
+    'SERVER_PROTOCOL' => 'HTTP/1.1',
+    'GATEWAY_INTERFACE' => 'CGI/1.1',
+    'REMOTE_PORT' => '59918',
+    'SCRIPT_FILENAME' => '/home/coralperfumes/public_html/index.php',
+    'SERVER_ADMIN' => 'webmaster@perfumedunia.com',
+    'CONTEXT_DOCUMENT_ROOT' => '/home/coralperfumes/public_html',
+    'CONTEXT_PREFIX' => '',
+    'REQUEST_SCHEME' => 'http',
+    'DOCUMENT_ROOT' => '/home/coralperfumes/public_html',
+    'REMOTE_ADDR' => '122.174.72.72',
+    'SERVER_PORT' => '80',
+    'SERVER_ADDR' => '148.66.136.67',
+    'SERVER_NAME' => 'perfumedunia.com',
+    'SERVER_SOFTWARE' => 'Apache',
+    'SERVER_SIGNATURE' => '',
+    'LD_LIBRARY_PATH' => '/usr/local/apache/lib',
+    'HTTP_COOKIE' => '_csrf-frontend=73d49fd74cb2b3ec245f79f081a7ea85e49bb4a18e277d5eabe4fab396737741a%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22%602%B1%D5%3B%88%FC%2F%AF%12%ADR_%BF%BCq%D2%2C%9B%3ChCk%8ENB%E7%8C%09sG%E1%22%3B%7D; advanced-frontend=58698e02059af2ee4a77a2eb5b5a4903; _identity-frontend=b99fc665b686e679be093f7ff3c17ed590fb4c66cd65b5d95b9cdf8fcfaca242a%3A2%3A%7Bi%3A0%3Bs%3A18%3A%22_identity-frontend%22%3Bi%3A1%3Bs%3A14%3A%22%5B3%2C%22%22%2C2592000%5D%22%3B%7D',
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.8',
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate',
+    'HTTP_REFERER' => 'http://perfumedunia.com/fiori-perfumes',
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1',
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/61.0.3163.100 Safari/537.36',
+    'HTTP_CONNECTION' => 'close',
+    'HTTP_HOST' => 'perfumedunia.com',
+    'UNIQUE_ID' => 'WdtbXZRCkYQAD9@lzKMAAAAW',
+    'FCGI_ROLE' => 'RESPONDER',
+    'PHP_SELF' => '/index.php',
+    'REQUEST_TIME_FLOAT' => 1507547997.175981044769287109375,
+    'REQUEST_TIME' => 1507547997,
+]
+[10-Oct-2017 12:05:14 UTC] An Error occurred while handling another error:
+Error: Class 'common\models\CmsOthers' not found in /home/coralperfumes/public_html/beta/frontend/views/layouts/main.php:51
+Stack trace:
+#0 /home/coralperfumes/public_html/beta/vendor/yiisoft/yii2/base/View.php(330): require()
+#1 /home/coralperfumes/public_html/beta/vendor/yiisoft/yii2/base/View.php(250): yii\base\View->renderPhpFile('/home/coralperf...', Array)
+#2 /home/coralperfumes/public_html/beta/vendor/yiisoft/yii2/base/Controller.php(396): yii\base\View->renderFile('/home/coralperf...', Array, Object(frontend\controllers\SiteController))
+#3 /home/coralperfumes/public_html/beta/vendor/yiisoft/yii2/base/Controller.php(382): yii\base\Controller->renderContent('<div class="sit...')
+#4 /home/coralperfumes/public_html/beta/vendor/yiisoft/yii2/web/ErrorAction.php(128): yii\base\Controller->render('error', Array)
+#5 /home/coralperfumes/public_html/beta/vendor/yiisoft/yii2/web/ErrorAction.php(107): yii\web\ErrorAction->renderHtmlResponse()
+#6 [internal function]: yii\web\ErrorAction->run()
+#7 /home/coralperfumes/public_html/beta/vendor/yiisoft/yii2/base/Action.php(94): call_user_func_array(Array, Array)
+#8 /home/coralperfumes/public_html/beta/vendor/yiisoft/yii2/base/Controller.php(156): yii\base\Action->runWithParams(Array)
+#9 /home/coralperfumes/public_html/beta/vendor/yiisoft/yii2/base/Module.php(523): yii\base\Controller->runAction('error', Array)
+#10 /home/coralperfumes/public_html/beta/vendor/yiisoft/yii2/web/ErrorHandler.php(97): yii\base\Module->runAction('site/error')
+#11 /home/coralperfumes/public_html/beta/vendor/yiisoft/yii2/base/ErrorHandler.php(111): yii\web\ErrorHandler->renderException(Object(Error))
+#12 [internal function]: yii\base\ErrorHandler->handleException(Object(Error))
+#13 {main}
+Previous exception:
+Error: Class 'common\models\User' not found in /home/coralperfumes/public_html/beta/vendor/yiisoft/yii2/web/User.php:564
+Stack trace:
+#0 /home/coralperfumes/public_html/beta/vendor/yiisoft/yii2/web/User.php(287): yii\web\User->getIdentityAndDurationFromCookie()
+#1 /home/coralperfumes/public_html/beta/vendor/yiisoft/yii2/web/User.php(674): yii\web\User->loginByCookie()
+#2 /home/coralperfumes/public_html/beta/vendor/yiisoft/yii2/web/User.php(188): yii\web\User->renewAuthStatus()
+#3 /home/coralperfumes/public_html/beta/vendor/yiisoft/yii2/web/User.php(333): yii\web\User->getIdentity()
+#4 /home/coralperfumes/public_html/beta/vendor/yiisoft/yii2/base/Component.php(132): yii\web\User->getIsGuest()
+#5 /home/coralperfumes/public_html/beta/vendor/yiisoft/yii2-debug/panels/UserPanel.php(75): yii\base\Component->__get('isGuest')
+#6 /home/coralperfumes/public_html/beta/vendor/yiisoft/yii2/base/Object.php(107): yii\debug\panels\UserPanel->init()
+#7 [internal function]: yii\base\Object->__construct(Array)
+#8 /home/coralperfumes/public_html/beta/vendor/yiisoft/yii2/di/Container.php(381): ReflectionClass->newInstanceArgs(Array)
+#9 /home/coralperfumes/public_html/beta/vendor/yiisoft/yii2/di/Container.php(156): yii\di\Container->build('yii\\debug\\panel...', Array, Array)
+#10 /home/coralperfumes/public_html/beta/vendor/yiisoft/yii2/BaseYii.php(348): yii\di\Container->get('yii\\debug\\panel...', Array, Array)
+#11 /home/coralperfumes/public_html/beta/vendor/yiisoft/yii2-debug/Module.php(177): yii\BaseYii::createObject(Array)
+#12 /home/coralperfumes/public_html/beta/vendor/yiisoft/yii2-debug/Module.php(149): yii\debug\Module->initPanels()
+#13 /home/coralperfumes/public_html/beta/vendor/yiisoft/yii2/base/Object.php(107): yii\debug\Module->init()
+#14 /home/coralperfumes/public_html/beta/vendor/yiisoft/yii2/base/Module.php(158): yii\base\Object->__construct(Array)
+#15 [internal function]: yii\base\Module->__construct('debug', Object(yii\web\Application), Array)
+#16 /home/coralperfumes/public_html/beta/vendor/yiisoft/yii2/di/Container.php(375): ReflectionClass->newInstanceArgs(Array)
+#17 /home/coralperfumes/public_html/beta/vendor/yiisoft/yii2/di/Container.php(156): yii\di\Container->build('yii\\debug\\Modul...', Array, Array)
+#18 /home/coralperfumes/public_html/beta/vendor/yiisoft/yii2/BaseYii.php(348): yii\di\Container->get('yii\\debug\\Modul...', Array, Array)
+#19 /home/coralperfumes/public_html/beta/vendor/yiisoft/yii2/base/Module.php(423): yii\BaseYii::createObject(Array, Array)
+#20 /home/coralperfumes/public_html/beta/vendor/yiisoft/yii2/base/Application.php(309): yii\base\Module->getModule('debug')
+#21 /home/coralperfumes/public_html/beta/vendor/yiisoft/yii2/web/Application.php(69): yii\base\Application->bootstrap()
+#22 /home/coralperfumes/public_html/beta/vendor/yiisoft/yii2/base/Application.php(272): yii\web\Application->bootstrap()
+#23 /home/coralperfumes/public_html/beta/vendor/yiisoft/yii2/base/Object.php(107): yii\base\Application->init()
+#24 /home/coralperfumes/public_html/beta/vendor/yiisoft/yii2/base/Application.php(205): yii\base\Object->__construct(Array)
+#25 /home/coralperfumes/public_html/beta/index.php(17): yii\base\Application->__construct(Array)
+#26 {main}
+$_SERVER = [
+    'PATH' => '/usr/local/jdk/bin:/usr/kerberos/sbin:/usr/kerberos/bin:/usr/local/sbin:/usr/local/bin:/sbin:/bin:/usr/sbin:/usr/bin:/usr/X11R6/bin:/usr/local/bin:/usr/X11R6/bin:/root/bin:/opt/bin',
+    'SCRIPT_NAME' => '/index.php',
+    'REQUEST_URI' => '/',
+    'QUERY_STRING' => '',
+    'REQUEST_METHOD' => 'GET',
+    'SERVER_PROTOCOL' => 'HTTP/1.1',
+    'GATEWAY_INTERFACE' => 'CGI/1.1',
+    'REMOTE_PORT' => '51048',
+    'SCRIPT_FILENAME' => '/home/coralperfumes/public_html/beta/index.php',
+    'SERVER_ADMIN' => 'webmaster@beta.coralperfumes.com',
+    'CONTEXT_DOCUMENT_ROOT' => '/home/coralperfumes/public_html/beta',
+    'CONTEXT_PREFIX' => '',
+    'REQUEST_SCHEME' => 'http',
+    'DOCUMENT_ROOT' => '/home/coralperfumes/public_html/beta',
+    'REMOTE_ADDR' => '122.174.232.110',
+    'SERVER_PORT' => '80',
+    'SERVER_ADDR' => '148.66.136.67',
+    'SERVER_NAME' => 'beta.coralperfumes.com',
+    'SERVER_SOFTWARE' => 'Apache',
+    'SERVER_SIGNATURE' => '',
+    'LD_LIBRARY_PATH' => '/usr/local/apache/lib',
+    'HTTP_COOKIE' => '_csrf-frontend=6114fb1a501e0ac63f161fc0d6005995becb53905b502855bbab2c3da41bc221a%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22%9ENy%23%CF%BDH%24%CE%BAKH%189%823B-%BE%DD%FCth.%60%2A%C5%DA%F3%84R%8F%22%3B%7D; advanced-frontend=6cb76a2e29a6e0c54a295214c5e0f191; _identity-frontend=b99fc665b686e679be093f7ff3c17ed590fb4c66cd65b5d95b9cdf8fcfaca242a%3A2%3A%7Bi%3A0%3Bs%3A18%3A%22_identity-frontend%22%3Bi%3A1%3Bs%3A14%3A%22%5B3%2C%22%22%2C2592000%5D%22%3B%7D',
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.8',
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate',
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1',
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/61.0.3163.100 Safari/537.36',
+    'HTTP_CONNECTION' => 'close',
+    'HTTP_HOST' => 'beta.coralperfumes.com',
+    'UNIQUE_ID' => 'Wdy3epRCkYQABUdtONwAAABM',
+    'FCGI_ROLE' => 'RESPONDER',
+    'PHP_SELF' => '/index.php',
+    'REQUEST_TIME_FLOAT' => 1507637114.8005759716033935546875,
+    'REQUEST_TIME' => 1507637114,
+]
+[10-Oct-2017 12:05:17 UTC] An Error occurred while handling another error:
+Error: Class 'common\models\CmsOthers' not found in /home/coralperfumes/public_html/beta/frontend/views/layouts/main.php:51
+Stack trace:
+#0 /home/coralperfumes/public_html/beta/vendor/yiisoft/yii2/base/View.php(330): require()
+#1 /home/coralperfumes/public_html/beta/vendor/yiisoft/yii2/base/View.php(250): yii\base\View->renderPhpFile('/home/coralperf...', Array)
+#2 /home/coralperfumes/public_html/beta/vendor/yiisoft/yii2/base/Controller.php(396): yii\base\View->renderFile('/home/coralperf...', Array, Object(frontend\controllers\SiteController))
+#3 /home/coralperfumes/public_html/beta/vendor/yiisoft/yii2/base/Controller.php(382): yii\base\Controller->renderContent('<div class="sit...')
+#4 /home/coralperfumes/public_html/beta/vendor/yiisoft/yii2/web/ErrorAction.php(128): yii\base\Controller->render('error', Array)
+#5 /home/coralperfumes/public_html/beta/vendor/yiisoft/yii2/web/ErrorAction.php(107): yii\web\ErrorAction->renderHtmlResponse()
+#6 [internal function]: yii\web\ErrorAction->run()
+#7 /home/coralperfumes/public_html/beta/vendor/yiisoft/yii2/base/Action.php(94): call_user_func_array(Array, Array)
+#8 /home/coralperfumes/public_html/beta/vendor/yiisoft/yii2/base/Controller.php(156): yii\base\Action->runWithParams(Array)
+#9 /home/coralperfumes/public_html/beta/vendor/yiisoft/yii2/base/Module.php(523): yii\base\Controller->runAction('error', Array)
+#10 /home/coralperfumes/public_html/beta/vendor/yiisoft/yii2/web/ErrorHandler.php(97): yii\base\Module->runAction('site/error')
+#11 /home/coralperfumes/public_html/beta/vendor/yiisoft/yii2/base/ErrorHandler.php(111): yii\web\ErrorHandler->renderException(Object(Error))
+#12 [internal function]: yii\base\ErrorHandler->handleException(Object(Error))
+#13 {main}
+Previous exception:
+Error: Class 'common\models\User' not found in /home/coralperfumes/public_html/beta/vendor/yiisoft/yii2/web/User.php:564
+Stack trace:
+#0 /home/coralperfumes/public_html/beta/vendor/yiisoft/yii2/web/User.php(287): yii\web\User->getIdentityAndDurationFromCookie()
+#1 /home/coralperfumes/public_html/beta/vendor/yiisoft/yii2/web/User.php(674): yii\web\User->loginByCookie()
+#2 /home/coralperfumes/public_html/beta/vendor/yiisoft/yii2/web/User.php(188): yii\web\User->renewAuthStatus()
+#3 /home/coralperfumes/public_html/beta/vendor/yiisoft/yii2/web/User.php(333): yii\web\User->getIdentity()
+#4 /home/coralperfumes/public_html/beta/vendor/yiisoft/yii2/base/Component.php(132): yii\web\User->getIsGuest()
+#5 /home/coralperfumes/public_html/beta/vendor/yiisoft/yii2-debug/panels/UserPanel.php(75): yii\base\Component->__get('isGuest')
+#6 /home/coralperfumes/public_html/beta/vendor/yiisoft/yii2/base/Object.php(107): yii\debug\panels\UserPanel->init()
+#7 [internal function]: yii\base\Object->__construct(Array)
+#8 /home/coralperfumes/public_html/beta/vendor/yiisoft/yii2/di/Container.php(381): ReflectionClass->newInstanceArgs(Array)
+#9 /home/coralperfumes/public_html/beta/vendor/yiisoft/yii2/di/Container.php(156): yii\di\Container->build('yii\\debug\\panel...', Array, Array)
+#10 /home/coralperfumes/public_html/beta/vendor/yiisoft/yii2/BaseYii.php(348): yii\di\Container->get('yii\\debug\\panel...', Array, Array)
+#11 /home/coralperfumes/public_html/beta/vendor/yiisoft/yii2-debug/Module.php(177): yii\BaseYii::createObject(Array)
+#12 /home/coralperfumes/public_html/beta/vendor/yiisoft/yii2-debug/Module.php(149): yii\debug\Module->initPanels()
+#13 /home/coralperfumes/public_html/beta/vendor/yiisoft/yii2/base/Object.php(107): yii\debug\Module->init()
+#14 /home/coralperfumes/public_html/beta/vendor/yiisoft/yii2/base/Module.php(158): yii\base\Object->__construct(Array)
+#15 [internal function]: yii\base\Module->__construct('debug', Object(yii\web\Application), Array)
+#16 /home/coralperfumes/public_html/beta/vendor/yiisoft/yii2/di/Container.php(375): ReflectionClass->newInstanceArgs(Array)
+#17 /home/coralperfumes/public_html/beta/vendor/yiisoft/yii2/di/Container.php(156): yii\di\Container->build('yii\\debug\\Modul...', Array, Array)
+#18 /home/coralperfumes/public_html/beta/vendor/yiisoft/yii2/BaseYii.php(348): yii\di\Container->get('yii\\debug\\Modul...', Array, Array)
+#19 /home/coralperfumes/public_html/beta/vendor/yiisoft/yii2/base/Module.php(423): yii\BaseYii::createObject(Array, Array)
+#20 /home/coralperfumes/public_html/beta/vendor/yiisoft/yii2/base/Application.php(309): yii\base\Module->getModule('debug')
+#21 /home/coralperfumes/public_html/beta/vendor/yiisoft/yii2/web/Application.php(69): yii\base\Application->bootstrap()
+#22 /home/coralperfumes/public_html/beta/vendor/yiisoft/yii2/base/Application.php(272): yii\web\Application->bootstrap()
+#23 /home/coralperfumes/public_html/beta/vendor/yiisoft/yii2/base/Object.php(107): yii\base\Application->init()
+#24 /home/coralperfumes/public_html/beta/vendor/yiisoft/yii2/base/Application.php(205): yii\base\Object->__construct(Array)
+#25 /home/coralperfumes/public_html/beta/index.php(17): yii\base\Application->__construct(Array)
+#26 {main}
+$_SERVER = [
+    'PATH' => '/usr/local/jdk/bin:/usr/kerberos/sbin:/usr/kerberos/bin:/usr/local/sbin:/usr/local/bin:/sbin:/bin:/usr/sbin:/usr/bin:/usr/X11R6/bin:/usr/local/bin:/usr/X11R6/bin:/root/bin:/opt/bin',
+    'SCRIPT_NAME' => '/index.php',
+    'REQUEST_URI' => '/',
+    'QUERY_STRING' => '',
+    'REQUEST_METHOD' => 'GET',
+    'SERVER_PROTOCOL' => 'HTTP/1.1',
+    'GATEWAY_INTERFACE' => 'CGI/1.1',
+    'REMOTE_PORT' => '51046',
+    'SCRIPT_FILENAME' => '/home/coralperfumes/public_html/beta/index.php',
+    'SERVER_ADMIN' => 'webmaster@beta.coralperfumes.com',
+    'CONTEXT_DOCUMENT_ROOT' => '/home/coralperfumes/public_html/beta',
+    'CONTEXT_PREFIX' => '',
+    'REQUEST_SCHEME' => 'http',
+    'DOCUMENT_ROOT' => '/home/coralperfumes/public_html/beta',
+    'REMOTE_ADDR' => '122.174.232.110',
+    'SERVER_PORT' => '80',
+    'SERVER_ADDR' => '148.66.136.67',
+    'SERVER_NAME' => 'beta.coralperfumes.com',
+    'SERVER_SOFTWARE' => 'Apache',
+    'SERVER_SIGNATURE' => '',
+    'LD_LIBRARY_PATH' => '/usr/local/apache/lib',
+    'HTTP_COOKIE' => '_csrf-frontend=6114fb1a501e0ac63f161fc0d6005995becb53905b502855bbab2c3da41bc221a%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22%9ENy%23%CF%BDH%24%CE%BAKH%189%823B-%BE%DD%FCth.%60%2A%C5%DA%F3%84R%8F%22%3B%7D; advanced-frontend=6cb76a2e29a6e0c54a295214c5e0f191; _identity-frontend=b99fc665b686e679be093f7ff3c17ed590fb4c66cd65b5d95b9cdf8fcfaca242a%3A2%3A%7Bi%3A0%3Bs%3A18%3A%22_identity-frontend%22%3Bi%3A1%3Bs%3A14%3A%22%5B3%2C%22%22%2C2592000%5D%22%3B%7D',
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.8',
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate',
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1',
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/61.0.3163.100 Safari/537.36',
+    'HTTP_CACHE_CONTROL' => 'max-age=0',
+    'HTTP_CONNECTION' => 'close',
+    'HTTP_HOST' => 'beta.coralperfumes.com',
+    'UNIQUE_ID' => 'Wdy3fZRCkYQABUfCw@IAAAGG',
+    'FCGI_ROLE' => 'RESPONDER',
+    'PHP_SELF' => '/index.php',
+    'REQUEST_TIME_FLOAT' => 1507637117.363295078277587890625,
+    'REQUEST_TIME' => 1507637117,
+]
+[11-Oct-2017 15:21:08 Asia/Kolkata] PHP Fatal error:  Uncaught yii\base\ErrorException: Object of class common\models\OrderMaster could not be converted to string in /home/coralperfumes/public_html/beta/common/mail/confirm_mail.php:11
+Stack trace:
+#0 /home/coralperfumes/public_html/beta/common/mail/confirm_mail.php(11): yii\base\ErrorHandler->handleError(4096, 'Object of class...', '/home/coralperf...', 11, Array)
+#1 /home/coralperfumes/public_html/beta/vendor/yiisoft/yii2/base/View.php(330): require('/home/coralperf...')
+#2 /home/coralperfumes/public_html/beta/vendor/yiisoft/yii2/base/View.php(250): yii\base\View->renderPhpFile('/home/coralperf...', Array)
+#3 /home/coralperfumes/public_html/beta/vendor/yiisoft/yii2/base/View.php(152): yii\base\View->renderFile('/home/coralperf...', Array, Object(yii\swiftmailer\Mailer))
+#4 /home/coralperfumes/public_html/beta/vendor/yiisoft/yii2/mail/BaseMailer.php(301): yii\base\View->render('confirm_mail', Array, Object(yii\swiftmailer\Mailer))
+#5 /home/coralperfumes/public_html/beta/vendor/yiisoft/yii2/mail/BaseMailer.php(19 in /home/coralperfumes/public_html/beta/common/mail/confirm_mail.php on line 11
+[17-Oct-2017 06:41:24 UTC] An Error occurred while handling another error:
+Error: Class 'common\models\CmsOthers' not found in /home/coralperfumes/public_html/beta/frontend/views/layouts/main.php:51
+Stack trace:
+#0 /home/coralperfumes/public_html/beta/vendor/yiisoft/yii2/base/View.php(330): require()
+#1 /home/coralperfumes/public_html/beta/vendor/yiisoft/yii2/base/View.php(250): yii\base\View->renderPhpFile('/home/coralperf...', Array)
+#2 /home/coralperfumes/public_html/beta/vendor/yiisoft/yii2/base/Controller.php(396): yii\base\View->renderFile('/home/coralperf...', Array, Object(frontend\controllers\SiteController))
+#3 /home/coralperfumes/public_html/beta/vendor/yiisoft/yii2/base/Controller.php(382): yii\base\Controller->renderContent('<section style=...')
+#4 /home/coralperfumes/public_html/beta/vendor/yiisoft/yii2/web/ErrorAction.php(128): yii\base\Controller->render('error', Array)
+#5 /home/coralperfumes/public_html/beta/vendor/yiisoft/yii2/web/ErrorAction.php(107): yii\web\ErrorAction->renderHtmlResponse()
+#6 [internal function]: yii\web\ErrorAction->run()
+#7 /home/coralperfumes/public_html/beta/vendor/yiisoft/yii2/base/Action.php(94): call_user_func_array(Array, Array)
+#8 /home/coralperfumes/public_html/beta/vendor/yiisoft/yii2/base/Controller.php(156): yii\base\Action->runWithParams(Array)
+#9 /home/coralperfumes/public_html/beta/vendor/yiisoft/yii2/base/Module.php(523): yii\base\Controller->runAction('error', Array)
+#10 /home/coralperfumes/public_html/beta/vendor/yiisoft/yii2/web/ErrorHandler.php(97): yii\base\Module->runAction('site/error')
+#11 /home/coralperfumes/public_html/beta/vendor/yiisoft/yii2/base/ErrorHandler.php(111): yii\web\ErrorHandler->renderException(Object(Error))
+#12 [internal function]: yii\base\ErrorHandler->handleException(Object(Error))
+#13 {main}
+Previous exception:
+Error: Class 'common\models\About' not found in /home/coralperfumes/public_html/beta/frontend/controllers/SiteController.php:97
+Stack trace:
+#0 [internal function]: frontend\controllers\SiteController->actionIndex()
+#1 /home/coralperfumes/public_html/beta/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array(Array, Array)
+#2 /home/coralperfumes/public_html/beta/vendor/yiisoft/yii2/base/Controller.php(156): yii\base\InlineAction->runWithParams(Array)
+#3 /home/coralperfumes/public_html/beta/vendor/yiisoft/yii2/base/Module.php(523): yii\base\Controller->runAction('index', Array)
+#4 /home/coralperfumes/public_html/beta/vendor/yiisoft/yii2/web/Application.php(102): yii\base\Module->runAction('site/index', Array)
+#5 /home/coralperfumes/public_html/beta/vendor/yiisoft/yii2/base/Application.php(380): yii\web\Application->handleRequest(Object(yii\web\Request))
+#6 /home/coralperfumes/public_html/beta/index.php(17): yii\base\Application->run()
+#7 {main}
+$_SERVER = [
+    'PATH' => '/usr/local/jdk/bin:/usr/kerberos/sbin:/usr/kerberos/bin:/usr/local/sbin:/usr/local/bin:/sbin:/bin:/usr/sbin:/usr/bin:/usr/X11R6/bin:/usr/local/bin:/usr/X11R6/bin:/root/bin:/opt/bin',
+    'SCRIPT_NAME' => '/index.php',
+    'REQUEST_URI' => '/',
+    'QUERY_STRING' => '',
+    'REQUEST_METHOD' => 'GET',
+    'SERVER_PROTOCOL' => 'HTTP/1.1',
+    'GATEWAY_INTERFACE' => 'CGI/1.1',
+    'REMOTE_PORT' => '65061',
+    'SCRIPT_FILENAME' => '/home/coralperfumes/public_html/beta/index.php',
+    'SERVER_ADMIN' => 'webmaster@beta.coralperfumes.com',
+    'CONTEXT_DOCUMENT_ROOT' => '/home/coralperfumes/public_html/beta',
+    'CONTEXT_PREFIX' => '',
+    'REQUEST_SCHEME' => 'http',
+    'DOCUMENT_ROOT' => '/home/coralperfumes/public_html/beta',
+    'REMOTE_ADDR' => '86.98.222.109',
+    'SERVER_PORT' => '80',
+    'SERVER_ADDR' => '148.66.136.67',
+    'SERVER_NAME' => 'beta.coralperfumes.com',
+    'SERVER_SOFTWARE' => 'Apache',
+    'SERVER_SIGNATURE' => '',
+    'LD_LIBRARY_PATH' => '/usr/local/apache/lib',
+    'HTTP_COOKIE' => 'advanced-frontend=090c079182f92bb403c86a9835c04322; _csrf-frontend=677d3b8bad00fc1f883eebbd10e692608860c79ac0b8099262ba79f75b7f00e8a%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22%0A%3BJ%8F%29%D2%D4%87%BEFQ%B4.%A6%DC%A7%7Ech%A3%CA%CB%12Pt%03%CEy%A2A%CC%1F%22%3B%7D; _csrf-backend=7b0a21ee268c8308fd4f4418ae39b0306464c9069854e0a7ffaa9d0187162413a%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22%01%87%8F%98%08%CA8%87%C3H%3F%D0a%87R%27r%FF%A7%E1%91%003%07%BD%A5%AD%AD%A3_%9D%90%22%3B%7D; advanced-backend=37fb60835e32ff18b5f9aa14c61b30b2',
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.8',
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate',
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1',
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/61.0.3163.100 Safari/537.36',
+    'HTTP_CONNECTION' => 'close',
+    'HTTP_HOST' => 'beta.coralperfumes.com',
+    'UNIQUE_ID' => 'WeWmFJRCkYQACcKhIqEAAAQO',
+    'FCGI_ROLE' => 'RESPONDER',
+    'PHP_SELF' => '/index.php',
+    'REQUEST_TIME_FLOAT' => 1508222484.50162410736083984375,
+    'REQUEST_TIME' => 1508222484,
+]
+[17-Oct-2017 06:41:34 UTC] An Error occurred while handling another error:
+Error: Class 'common\models\CmsOthers' not found in /home/coralperfumes/public_html/beta/frontend/views/layouts/main.php:51
+Stack trace:
+#0 /home/coralperfumes/public_html/beta/vendor/yiisoft/yii2/base/View.php(330): require()
+#1 /home/coralperfumes/public_html/beta/vendor/yiisoft/yii2/base/View.php(250): yii\base\View->renderPhpFile('/home/coralperf...', Array)
+#2 /home/coralperfumes/public_html/beta/vendor/yiisoft/yii2/base/Controller.php(396): yii\base\View->renderFile('/home/coralperf...', Array, Object(frontend\controllers\SiteController))
+#3 /home/coralperfumes/public_html/beta/vendor/yiisoft/yii2/base/Controller.php(382): yii\base\Controller->renderContent('<section style=...')
+#4 /home/coralperfumes/public_html/beta/vendor/yiisoft/yii2/web/ErrorAction.php(128): yii\base\Controller->render('error', Array)
+#5 /home/coralperfumes/public_html/beta/vendor/yiisoft/yii2/web/ErrorAction.php(107): yii\web\ErrorAction->renderHtmlResponse()
+#6 [internal function]: yii\web\ErrorAction->run()
+#7 /home/coralperfumes/public_html/beta/vendor/yiisoft/yii2/base/Action.php(94): call_user_func_array(Array, Array)
+#8 /home/coralperfumes/public_html/beta/vendor/yiisoft/yii2/base/Controller.php(156): yii\base\Action->runWithParams(Array)
+#9 /home/coralperfumes/public_html/beta/vendor/yiisoft/yii2/base/Module.php(523): yii\base\Controller->runAction('error', Array)
+#10 /home/coralperfumes/public_html/beta/vendor/yiisoft/yii2/web/ErrorHandler.php(97): yii\base\Module->runAction('site/error')
+#11 /home/coralperfumes/public_html/beta/vendor/yiisoft/yii2/base/ErrorHandler.php(111): yii\web\ErrorHandler->renderException(Object(Error))
+#12 [internal function]: yii\base\ErrorHandler->handleException(Object(Error))
+#13 {main}
+Previous exception:
+Error: Class 'common\models\About' not found in /home/coralperfumes/public_html/beta/frontend/controllers/SiteController.php:97
+Stack trace:
+#0 [internal function]: frontend\controllers\SiteController->actionIndex()
+#1 /home/coralperfumes/public_html/beta/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array(Array, Array)
+#2 /home/coralperfumes/public_html/beta/vendor/yiisoft/yii2/base/Controller.php(156): yii\base\InlineAction->runWithParams(Array)
+#3 /home/coralperfumes/public_html/beta/vendor/yiisoft/yii2/base/Module.php(523): yii\base\Controller->runAction('index', Array)
+#4 /home/coralperfumes/public_html/beta/vendor/yiisoft/yii2/web/Application.php(102): yii\base\Module->runAction('site/index', Array)
+#5 /home/coralperfumes/public_html/beta/vendor/yiisoft/yii2/base/Application.php(380): yii\web\Application->handleRequest(Object(yii\web\Request))
+#6 /home/coralperfumes/public_html/beta/index.php(17): yii\base\Application->run()
+#7 {main}
+$_SERVER = [
+    'PATH' => '/usr/local/jdk/bin:/usr/kerberos/sbin:/usr/kerberos/bin:/usr/local/sbin:/usr/local/bin:/sbin:/bin:/usr/sbin:/usr/bin:/usr/X11R6/bin:/usr/local/bin:/usr/X11R6/bin:/root/bin:/opt/bin',
+    'SCRIPT_NAME' => '/index.php',
+    'REQUEST_URI' => '/',
+    'QUERY_STRING' => '',
+    'REQUEST_METHOD' => 'GET',
+    'SERVER_PROTOCOL' => 'HTTP/1.1',
+    'GATEWAY_INTERFACE' => 'CGI/1.1',
+    'REMOTE_PORT' => '65062',
+    'SCRIPT_FILENAME' => '/home/coralperfumes/public_html/beta/index.php',
+    'SERVER_ADMIN' => 'webmaster@beta.coralperfumes.com',
+    'CONTEXT_DOCUMENT_ROOT' => '/home/coralperfumes/public_html/beta',
+    'CONTEXT_PREFIX' => '',
+    'REQUEST_SCHEME' => 'http',
+    'DOCUMENT_ROOT' => '/home/coralperfumes/public_html/beta',
+    'REMOTE_ADDR' => '86.98.222.109',
+    'SERVER_PORT' => '80',
+    'SERVER_ADDR' => '148.66.136.67',
+    'SERVER_NAME' => 'beta.coralperfumes.com',
+    'SERVER_SOFTWARE' => 'Apache',
+    'SERVER_SIGNATURE' => '',
+    'LD_LIBRARY_PATH' => '/usr/local/apache/lib',
+    'HTTP_COOKIE' => 'advanced-frontend=090c079182f92bb403c86a9835c04322; _csrf-frontend=677d3b8bad00fc1f883eebbd10e692608860c79ac0b8099262ba79f75b7f00e8a%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22%0A%3BJ%8F%29%D2%D4%87%BEFQ%B4.%A6%DC%A7%7Ech%A3%CA%CB%12Pt%03%CEy%A2A%CC%1F%22%3B%7D; _csrf-backend=7b0a21ee268c8308fd4f4418ae39b0306464c9069854e0a7ffaa9d0187162413a%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22%01%87%8F%98%08%CA8%87%C3H%3F%D0a%87R%27r%FF%A7%E1%91%003%07%BD%A5%AD%AD%A3_%9D%90%22%3B%7D; advanced-backend=37fb60835e32ff18b5f9aa14c61b30b2',
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.8',
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate',
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1',
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/61.0.3163.100 Safari/537.36',
+    'HTTP_CACHE_CONTROL' => 'max-age=0',
+    'HTTP_CONNECTION' => 'close',
+    'HTTP_HOST' => 'beta.coralperfumes.com',
+    'UNIQUE_ID' => 'WeWmHpRCkYQACcKhIrQAAAQQ',
+    'FCGI_ROLE' => 'RESPONDER',
+    'PHP_SELF' => '/index.php',
+    'REQUEST_TIME_FLOAT' => 1508222494.0627439022064208984375,
+    'REQUEST_TIME' => 1508222494,
+]
+[17-Oct-2017 06:41:35 UTC] An Error occurred while handling another error:
+Error: Class 'common\models\CmsOthers' not found in /home/coralperfumes/public_html/beta/frontend/views/layouts/main.php:51
+Stack trace:
+#0 /home/coralperfumes/public_html/beta/vendor/yiisoft/yii2/base/View.php(330): require()
+#1 /home/coralperfumes/public_html/beta/vendor/yiisoft/yii2/base/View.php(250): yii\base\View->renderPhpFile('/home/coralperf...', Array)
+#2 /home/coralperfumes/public_html/beta/vendor/yiisoft/yii2/base/Controller.php(396): yii\base\View->renderFile('/home/coralperf...', Array, Object(frontend\controllers\SiteController))
+#3 /home/coralperfumes/public_html/beta/vendor/yiisoft/yii2/base/Controller.php(382): yii\base\Controller->renderContent('<section style=...')
+#4 /home/coralperfumes/public_html/beta/vendor/yiisoft/yii2/web/ErrorAction.php(128): yii\base\Controller->render('error', Array)
+#5 /home/coralperfumes/public_html/beta/vendor/yiisoft/yii2/web/ErrorAction.php(107): yii\web\ErrorAction->renderHtmlResponse()
+#6 [internal function]: yii\web\ErrorAction->run()
+#7 /home/coralperfumes/public_html/beta/vendor/yiisoft/yii2/base/Action.php(94): call_user_func_array(Array, Array)
+#8 /home/coralperfumes/public_html/beta/vendor/yiisoft/yii2/base/Controller.php(156): yii\base\Action->runWithParams(Array)
+#9 /home/coralperfumes/public_html/beta/vendor/yiisoft/yii2/base/Module.php(523): yii\base\Controller->runAction('error', Array)
+#10 /home/coralperfumes/public_html/beta/vendor/yiisoft/yii2/web/ErrorHandler.php(97): yii\base\Module->runAction('site/error')
+#11 /home/coralperfumes/public_html/beta/vendor/yiisoft/yii2/base/ErrorHandler.php(111): yii\web\ErrorHandler->renderException(Object(Error))
+#12 [internal function]: yii\base\ErrorHandler->handleException(Object(Error))
+#13 {main}
+Previous exception:
+Error: Class 'common\models\About' not found in /home/coralperfumes/public_html/beta/frontend/controllers/SiteController.php:97
+Stack trace:
+#0 [internal function]: frontend\controllers\SiteController->actionIndex()
+#1 /home/coralperfumes/public_html/beta/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array(Array, Array)
+#2 /home/coralperfumes/public_html/beta/vendor/yiisoft/yii2/base/Controller.php(156): yii\base\InlineAction->runWithParams(Array)
+#3 /home/coralperfumes/public_html/beta/vendor/yiisoft/yii2/base/Module.php(523): yii\base\Controller->runAction('index', Array)
+#4 /home/coralperfumes/public_html/beta/vendor/yiisoft/yii2/web/Application.php(102): yii\base\Module->runAction('site/index', Array)
+#5 /home/coralperfumes/public_html/beta/vendor/yiisoft/yii2/base/Application.php(380): yii\web\Application->handleRequest(Object(yii\web\Request))
+#6 /home/coralperfumes/public_html/beta/index.php(17): yii\base\Application->run()
+#7 {main}
+$_SERVER = [
+    'PATH' => '/usr/local/jdk/bin:/usr/kerberos/sbin:/usr/kerberos/bin:/usr/local/sbin:/usr/local/bin:/sbin:/bin:/usr/sbin:/usr/bin:/usr/X11R6/bin:/usr/local/bin:/usr/X11R6/bin:/root/bin:/opt/bin',
+    'SCRIPT_NAME' => '/index.php',
+    'REQUEST_URI' => '/',
+    'QUERY_STRING' => '',
+    'REQUEST_METHOD' => 'GET',
+    'SERVER_PROTOCOL' => 'HTTP/1.1',
+    'GATEWAY_INTERFACE' => 'CGI/1.1',
+    'REMOTE_PORT' => '65096',
+    'SCRIPT_FILENAME' => '/home/coralperfumes/public_html/beta/index.php',
+    'SERVER_ADMIN' => 'webmaster@beta.coralperfumes.com',
+    'CONTEXT_DOCUMENT_ROOT' => '/home/coralperfumes/public_html/beta',
+    'CONTEXT_PREFIX' => '',
+    'REQUEST_SCHEME' => 'http',
+    'DOCUMENT_ROOT' => '/home/coralperfumes/public_html/beta',
+    'REMOTE_ADDR' => '86.98.222.109',
+    'SERVER_PORT' => '80',
+    'SERVER_ADDR' => '148.66.136.67',
+    'SERVER_NAME' => 'beta.coralperfumes.com',
+    'SERVER_SOFTWARE' => 'Apache',
+    'SERVER_SIGNATURE' => '',
+    'LD_LIBRARY_PATH' => '/usr/local/apache/lib',
+    'HTTP_COOKIE' => 'advanced-frontend=090c079182f92bb403c86a9835c04322; _csrf-frontend=677d3b8bad00fc1f883eebbd10e692608860c79ac0b8099262ba79f75b7f00e8a%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22%0A%3BJ%8F%29%D2%D4%87%BEFQ%B4.%A6%DC%A7%7Ech%A3%CA%CB%12Pt%03%CEy%A2A%CC%1F%22%3B%7D; _csrf-backend=7b0a21ee268c8308fd4f4418ae39b0306464c9069854e0a7ffaa9d0187162413a%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22%01%87%8F%98%08%CA8%87%C3H%3F%D0a%87R%27r%FF%A7%E1%91%003%07%BD%A5%AD%AD%A3_%9D%90%22%3B%7D; advanced-backend=37fb60835e32ff18b5f9aa14c61b30b2',
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.8',
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate',
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1',
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/61.0.3163.100 Safari/537.36',
+    'HTTP_CACHE_CONTROL' => 'max-age=0',
+    'HTTP_CONNECTION' => 'close',
+    'HTTP_HOST' => 'beta.coralperfumes.com',
+    'UNIQUE_ID' => 'WeWmH5RCkYQACTboWpYAAALM',
+    'FCGI_ROLE' => 'RESPONDER',
+    'PHP_SELF' => '/index.php',
+    'REQUEST_TIME_FLOAT' => 1508222495.92014408111572265625,
+    'REQUEST_TIME' => 1508222495,
+]
+[17-Oct-2017 06:45:06 UTC] An Error occurred while handling another error:
+Error: Class 'common\models\CmsOthers' not found in /home/coralperfumes/public_html/beta/frontend/views/layouts/main.php:51
+Stack trace:
+#0 /home/coralperfumes/public_html/beta/vendor/yiisoft/yii2/base/View.php(330): require()
+#1 /home/coralperfumes/public_html/beta/vendor/yiisoft/yii2/base/View.php(250): yii\base\View->renderPhpFile('/home/coralperf...', Array)
+#2 /home/coralperfumes/public_html/beta/vendor/yiisoft/yii2/base/Controller.php(396): yii\base\View->renderFile('/home/coralperf...', Array, Object(frontend\controllers\SiteController))
+#3 /home/coralperfumes/public_html/beta/vendor/yiisoft/yii2/base/Controller.php(382): yii\base\Controller->renderContent('<section style=...')
+#4 /home/coralperfumes/public_html/beta/vendor/yiisoft/yii2/web/ErrorAction.php(128): yii\base\Controller->render('error', Array)
+#5 /home/coralperfumes/public_html/beta/vendor/yiisoft/yii2/web/ErrorAction.php(107): yii\web\ErrorAction->renderHtmlResponse()
+#6 [internal function]: yii\web\ErrorAction->run()
+#7 /home/coralperfumes/public_html/beta/vendor/yiisoft/yii2/base/Action.php(94): call_user_func_array(Array, Array)
+#8 /home/coralperfumes/public_html/beta/vendor/yiisoft/yii2/base/Controller.php(156): yii\base\Action->runWithParams(Array)
+#9 /home/coralperfumes/public_html/beta/vendor/yiisoft/yii2/base/Module.php(523): yii\base\Controller->runAction('error', Array)
+#10 /home/coralperfumes/public_html/beta/vendor/yiisoft/yii2/web/ErrorHandler.php(97): yii\base\Module->runAction('site/error')
+#11 /home/coralperfumes/public_html/beta/vendor/yiisoft/yii2/base/ErrorHandler.php(111): yii\web\ErrorHandler->renderException(Object(Error))
+#12 [internal function]: yii\base\ErrorHandler->handleException(Object(Error))
+#13 {main}
+Previous exception:
+Error: Class 'common\models\About' not found in /home/coralperfumes/public_html/beta/frontend/controllers/SiteController.php:97
+Stack trace:
+#0 [internal function]: frontend\controllers\SiteController->actionIndex()
+#1 /home/coralperfumes/public_html/beta/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array(Array, Array)
+#2 /home/coralperfumes/public_html/beta/vendor/yiisoft/yii2/base/Controller.php(156): yii\base\InlineAction->runWithParams(Array)
+#3 /home/coralperfumes/public_html/beta/vendor/yiisoft/yii2/base/Module.php(523): yii\base\Controller->runAction('index', Array)
+#4 /home/coralperfumes/public_html/beta/vendor/yiisoft/yii2/web/Application.php(102): yii\base\Module->runAction('site/index', Array)
+#5 /home/coralperfumes/public_html/beta/vendor/yiisoft/yii2/base/Application.php(380): yii\web\Application->handleRequest(Object(yii\web\Request))
+#6 /home/coralperfumes/public_html/beta/index.php(17): yii\base\Application->run()
+#7 {main}
+$_SERVER = [
+    'PATH' => '/usr/local/jdk/bin:/usr/kerberos/sbin:/usr/kerberos/bin:/usr/local/sbin:/usr/local/bin:/sbin:/bin:/usr/sbin:/usr/bin:/usr/X11R6/bin:/usr/local/bin:/usr/X11R6/bin:/root/bin:/opt/bin',
+    'SCRIPT_NAME' => '/index.php',
+    'REQUEST_URI' => '/',
+    'QUERY_STRING' => '',
+    'REQUEST_METHOD' => 'GET',
+    'SERVER_PROTOCOL' => 'HTTP/1.1',
+    'GATEWAY_INTERFACE' => 'CGI/1.1',
+    'REMOTE_PORT' => '65240',
+    'SCRIPT_FILENAME' => '/home/coralperfumes/public_html/beta/index.php',
+    'SERVER_ADMIN' => 'webmaster@beta.coralperfumes.com',
+    'CONTEXT_DOCUMENT_ROOT' => '/home/coralperfumes/public_html/beta',
+    'CONTEXT_PREFIX' => '',
+    'REQUEST_SCHEME' => 'http',
+    'DOCUMENT_ROOT' => '/home/coralperfumes/public_html/beta',
+    'REMOTE_ADDR' => '86.98.222.109',
+    'SERVER_PORT' => '80',
+    'SERVER_ADDR' => '148.66.136.67',
+    'SERVER_NAME' => 'beta.coralperfumes.com',
+    'SERVER_SOFTWARE' => 'Apache',
+    'SERVER_SIGNATURE' => '',
+    'LD_LIBRARY_PATH' => '/usr/local/apache/lib',
+    'HTTP_COOKIE' => 'advanced-frontend=090c079182f92bb403c86a9835c04322; _csrf-frontend=677d3b8bad00fc1f883eebbd10e692608860c79ac0b8099262ba79f75b7f00e8a%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22%0A%3BJ%8F%29%D2%D4%87%BEFQ%B4.%A6%DC%A7%7Ech%A3%CA%CB%12Pt%03%CEy%A2A%CC%1F%22%3B%7D; _csrf-backend=7b0a21ee268c8308fd4f4418ae39b0306464c9069854e0a7ffaa9d0187162413a%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22%01%87%8F%98%08%CA8%87%C3H%3F%D0a%87R%27r%FF%A7%E1%91%003%07%BD%A5%AD%AD%A3_%9D%90%22%3B%7D; advanced-backend=37fb60835e32ff18b5f9aa14c61b30b2',
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.8',
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate',
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1',
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/61.0.3163.100 Safari/537.36',
+    'HTTP_CACHE_CONTROL' => 'max-age=0',
+    'HTTP_CONNECTION' => 'close',
+    'HTTP_HOST' => 'beta.coralperfumes.com',
+    'UNIQUE_ID' => 'WeWm8pRCkYQACvuRNwQAAAGC',
+    'FCGI_ROLE' => 'RESPONDER',
+    'PHP_SELF' => '/index.php',
+    'REQUEST_TIME_FLOAT' => 1508222706.423429965972900390625,
+    'REQUEST_TIME' => 1508222706,
+]
+[01-Nov-2017 11:26:57 UTC] PHP Warning:  require(/home/coralperfumes/public_html/beta/vendor/autoload.php): failed to open stream: No such file or directory in /home/coralperfumes/public_html/beta/index.php on line 5
+[01-Nov-2017 11:26:57 UTC] PHP Fatal error:  require(): Failed opening required '/home/coralperfumes/public_html/beta/vendor/autoload.php' (include_path='.:/opt/alt/php71/usr/share/pear') in /home/coralperfumes/public_html/beta/index.php on line 5
+[01-Nov-2017 11:27:02 UTC] PHP Warning:  require(/home/coralperfumes/public_html/beta/vendor/autoload.php): failed to open stream: No such file or directory in /home/coralperfumes/public_html/beta/index.php on line 5
+[01-Nov-2017 11:27:02 UTC] PHP Fatal error:  require(): Failed opening required '/home/coralperfumes/public_html/beta/vendor/autoload.php' (include_path='.:/opt/alt/php71/usr/share/pear') in /home/coralperfumes/public_html/beta/index.php on line 5
+[01-Nov-2017 11:27:03 UTC] PHP Warning:  require(/home/coralperfumes/public_html/beta/vendor/autoload.php): failed to open stream: No such file or directory in /home/coralperfumes/public_html/beta/index.php on line 5
+[01-Nov-2017 11:27:03 UTC] PHP Fatal error:  require(): Failed opening required '/home/coralperfumes/public_html/beta/vendor/autoload.php' (include_path='.:/opt/alt/php71/usr/share/pear') in /home/coralperfumes/public_html/beta/index.php on line 5
+[01-Nov-2017 11:27:04 UTC] PHP Warning:  require(/home/coralperfumes/public_html/beta/vendor/autoload.php): failed to open stream: No such file or directory in /home/coralperfumes/public_html/beta/index.php on line 5
+[01-Nov-2017 11:27:04 UTC] PHP Fatal error:  require(): Failed opening required '/home/coralperfumes/public_html/beta/vendor/autoload.php' (include_path='.:/opt/alt/php71/usr/share/pear') in /home/coralperfumes/public_html/beta/index.php on line 5
+[01-Nov-2017 11:27:05 UTC] PHP Warning:  require(/home/coralperfumes/public_html/beta/vendor/autoload.php): failed to open stream: No such file or directory in /home/coralperfumes/public_html/beta/index.php on line 5
+[01-Nov-2017 11:27:05 UTC] PHP Fatal error:  require(): Failed opening required '/home/coralperfumes/public_html/beta/vendor/autoload.php' (include_path='.:/opt/alt/php71/usr/share/pear') in /home/coralperfumes/public_html/beta/index.php on line 5
+[01-Nov-2017 11:27:16 UTC] PHP Warning:  require(/home/coralperfumes/public_html/beta/vendor/autoload.php): failed to open stream: No such file or directory in /home/coralperfumes/public_html/beta/index.php on line 5
+[01-Nov-2017 11:27:16 UTC] PHP Fatal error:  require(): Failed opening required '/home/coralperfumes/public_html/beta/vendor/autoload.php' (include_path='.:/opt/alt/php71/usr/share/pear') in /home/coralperfumes/public_html/beta/index.php on line 5
