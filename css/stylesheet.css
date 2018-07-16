@@ -440,7 +440,7 @@ a:focus {
 	width:530px;
 }
 .home-why-choose-section .img-box{
-	background:url(../images/home-why-chous.jpg) top center no-repeat;
+	/*background:url(../images/home-why-chous.jpg) top center no-repeat;*/
 	width:100%;
 	height:100%;
 	background-size:cover;
@@ -1354,4 +1354,17 @@ a:focus {
     font-weight: 300;
     text-align: center;
     margin-bottom: 20px;
+}
+.home-welcom-section p {
+    font-size: 16px;
+    padding: 0px 100px;
+    line-height: 35px;
+    color: #888;
+    font-weight: 300;
+}
+.home-core-values-section p {
+    font-size: 16px;
+    line-height: 35px;
+    color: #888;
+    font-weight: 300;
 }

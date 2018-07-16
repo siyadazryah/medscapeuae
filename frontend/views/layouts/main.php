@@ -9,6 +9,7 @@ use yii\widgets\ActiveForm;
 $action = Yii::$app->controller->id . '/' . Yii::$app->controller->action->id;
 
 AppAsset::register($this);
+$home_contents = common\models\HomeContent::findOne(1);
 ?>
 <?php $this->beginPage() ?>
 <!DOCTYPE html>
@@ -38,10 +39,10 @@ AppAsset::register($this);
                         </div>
                         <div class="col-md-7">
                             <div class="top-right-section">
-                                <div class="call"><span>CALL NOW:</span> <a href="tel:042 413 253" class="head-text">042 413 253</a></div>
+                                <div class="call"><span>CALL NOW:</span> <a href="tel:<?= $home_contents->header_phone ?>" class="head-text"><?= $home_contents->header_phone ?></a></div>
                             </div>
                             <div class="top-right-section">
-                                <div class="call"><span>E-Mail:</span> <a href="mailto:info@medscapeuae.com" class="head-text">info@medscapeuae.com</a></div>
+                                <div class="call"><span>E-Mail:</span> <a href="mailto:<?= $home_contents->header_email ?>" class="head-text"><?= $home_contents->header_email ?></a></div>
                             </div>
                         </div>
                     </div>
@@ -122,7 +123,7 @@ AppAsset::register($this);
                     <div class="col-lg-4 col-md-12">
                         <div class="f-cont-box">
                             <h6 class="f-head">About</h6>
-                            <p>MedScape as the name suggests is an extensive view or representation of the medical world and the equipments used in the medical world. We at MedScape make sure that the best medical products such as Laboratory & Scientific Equipment, Medical & Surgical Equipment, Physiotherapy Equipments, Hospital Furniture’s, Wheel Chairs, Orthopaedic supports, Surgical disposables , Medical Gas Equipment etc. </p>
+                            <p><?= $home_contents->about_in_footer ?></p>
                         </div>
                     </div>
                     <div class="col-lg-2 col-md-4">
@@ -160,24 +161,23 @@ AppAsset::register($this);
                             <li>
 
                                 <b>Address</b>
-                            <dd class="cont">Medscape Medical Equipment Trading LLc<br>
-                                Lootha building, 1st floor, Room 103,<br>
-                                Al  Qusais, Industrial area number 4<br>
-                                Dubai, UAE</dd>
+                            <dd class="cont">
+                                <?= $home_contents->address ?>
+                            </dd>
                             </li>
                             <li>
                                 <b>Phones</b>
-                            <dd class="cont">Tel: 042 413 253</dd>
-                            <dd class="cont">Mobile: 050 759 3262</dd>
+                            <dd class="cont">Tel: <?= $home_contents->phone ?></dd>
+                            <dd class="cont">Mobile: <?= $home_contents->mobile ?></dd>
                             </dd>
                             </dl>
                             </li>
                             <li>
                                 <b>E-mail</b>
-                            <dd class="cont"><a href="mailto:sales@medscapeuae.com">info@medscapeuae.com</a></dd>
+                            <dd class="cont"><a href="mailto:<?= $home_contents->email ?>"><?= $home_contents->email ?></a></dd>
                             </li>
                             <li>
-                            <dd class="cont">Web: www.medscapeuae.com</dt>
+                            <dd class="cont">Web: <?= $home_contents->web_url ?></dt>
                                 </li>
                         </ul>
                     </div>

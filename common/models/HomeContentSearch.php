@@ -18,8 +18,8 @@ class HomeContentSearch extends HomeContent
     public function rules()
     {
         return [
-            [['id', 'UB', 'status'], 'integer'],
-            [['time', 'gallery_content', 'service_content', 'partner_content', 'customer_content', 'DOU'], 'safe'],
+            [['id', 'status', 'CB', 'UB'], 'integer'],
+            [['welcome_content', 'about_content', 'about_image', 'core_value_content', 'core_value_image', 'our_product_content', 'product_image1', 'product_image2', 'product_image3', 'product_image4', 'equipments', 'header_email', 'header_phone', 'about_in_footer', 'address', 'phone', 'mobile', 'web_url', 'DOC', 'DOU'], 'safe'],
         ];
     }
 
@@ -60,16 +60,32 @@ class HomeContentSearch extends HomeContent
         // grid filtering conditions
         $query->andFilterWhere([
             'id' => $this->id,
-            'UB' => $this->UB,
-            'DOU' => $this->DOU,
+            'email' => $this->email,
             'status' => $this->status,
+            'CB' => $this->CB,
+            'UB' => $this->UB,
+            'DOC' => $this->DOC,
+            'DOU' => $this->DOU,
         ]);
 
-        $query->andFilterWhere(['like', 'time', $this->time])
-            ->andFilterWhere(['like', 'gallery_content', $this->gallery_content])
-            ->andFilterWhere(['like', 'service_content', $this->service_content])
-            ->andFilterWhere(['like', 'partner_content', $this->partner_content])
-            ->andFilterWhere(['like', 'customer_content', $this->customer_content]);
+        $query->andFilterWhere(['like', 'welcome_content', $this->welcome_content])
+            ->andFilterWhere(['like', 'about_content', $this->about_content])
+            ->andFilterWhere(['like', 'about_image', $this->about_image])
+            ->andFilterWhere(['like', 'core_value_content', $this->core_value_content])
+            ->andFilterWhere(['like', 'core_value_image', $this->core_value_image])
+            ->andFilterWhere(['like', 'our_product_content', $this->our_product_content])
+            ->andFilterWhere(['like', 'product_image1', $this->product_image1])
+            ->andFilterWhere(['like', 'product_image2', $this->product_image2])
+            ->andFilterWhere(['like', 'product_image3', $this->product_image3])
+            ->andFilterWhere(['like', 'product_image4', $this->product_image4])
+            ->andFilterWhere(['like', 'equipments', $this->equipments])
+            ->andFilterWhere(['like', 'header_email', $this->header_email])
+            ->andFilterWhere(['like', 'header_phone', $this->header_phone])
+            ->andFilterWhere(['like', 'about_in_footer', $this->about_in_footer])
+            ->andFilterWhere(['like', 'address', $this->address])
+            ->andFilterWhere(['like', 'phone', $this->phone])
+            ->andFilterWhere(['like', 'mobile', $this->mobile])
+            ->andFilterWhere(['like', 'web_url', $this->web_url]);
 
         return $dataProvider;
     }

@@ -87,7 +87,7 @@ AppAsset::register($this);
                         </a>
                         <ul>
                             <li>
-                                <?= Html::a('<i class="fa fa-sliders"></i> <span class="title">Sliders</span>', ['/cms/slider/index'], ['class' => 'title']) ?>
+                                <?= Html::a('<i class="fa fa-angle-double-right"></i> <span class="title">Sliders</span>', ['/cms/slider/index'], ['class' => 'title']) ?>
                             </li>
                             <li>
                                 <?= Html::a('<i class="fa fa-angle-double-right"></i>Home Content', ['/cms/home-content/update', 'id' => 1], ['class' => 'title']) ?>
@@ -95,40 +95,32 @@ AppAsset::register($this);
                             <li>
                                 <?= Html::a('<i class="fa fa-angle-double-right"></i>Testimonial', ['/cms/testimonial/index'], ['class' => 'title']) ?>
                             </li>
+                            <li>
+                                <?= Html::a('<i class="fa fa-angle-double-right"></i>Equipments', ['/cms/equipments/index'], ['class' => 'title']) ?>
+                            </li>
                         </ul>
                     </li>
                     <li>
                         <?= Html::a('<i class="fa fa-hotel"></i> About', ['/cms/about/update', 'id' => 1], ['class' => 'title']) ?>
                     </li>
                     <li>
-                        <a href="">
-                            <i class="fa fa-photo"></i>
-                            <span class="title">Gallery</span>
-                        </a>
-                        <ul>
-                            <li>
-                                <?= Html::a('<i class="fa fa-angle-double-right"></i> Category', ['/cms/category/index'], ['class' => 'title']) ?>
-                            </li>
-                            <li>
-                                <?= Html::a('<i class="fa fa-angle-double-right"></i> Gallery', ['/cms/gallery/index'], ['class' => 'title']) ?>
-                            </li>
-                        </ul>
+                        <?= Html::a('<i class="fa fa-photo"></i> Project Gallery', ['/cms/project-gallery/index'], ['class' => 'title']) ?>
                     </li>
                     <li>
                         <a href="">
-                            <i class="fa fa-ship"></i>
-                            <span class="title">Brand</span>
+                            <i class="fa fa-product-hunt"></i>
+                            <span class="title">Product Management</span>
                         </a>
                         <ul>
                             <li>
-                                <?= Html::a('<i class="fa fa-angle-double-right"></i> Brands', ['/cms/brand/index'], ['class' => 'title']) ?>
+                                <?= Html::a('<i class="fa fa-angle-double-right"></i> Product Category', ['/cms/product-category/index'], ['class' => 'title']) ?>
                             </li>
+
                             <li>
-                                <?= Html::a('<i class="fa fa-angle-double-right"></i> Brand Content', ['/cms/brand-content/update', 'id' => 1], ['class' => 'title']) ?>
+                                <?= Html::a('<i class="fa fa-angle-double-right"></i> Products', ['/cms/products/index'], ['class' => 'title']) ?>
                             </li>
                         </ul>
                     </li>
-
                     <li>
                         <?= Html::a('<i class="fa fa-address-card"></i> <span class="title">Contact</span>', ['/cms/contact/update', 'id' => 1], ['class' => 'title']) ?>
                     </li>
@@ -140,9 +132,6 @@ AppAsset::register($this);
                     </li>
                     <li>
                         <?= Html::a('<i class="fa fa-envelope"></i> <span class="title">Contact Us</span>', ['/cms/contact-form/index'], ['class' => 'title']) ?>
-                    </li>
-                    <li>
-                        <?= Html::a('<i class="fa fa-suitcase"></i> <span class="title">Footer Content</span>', ['/cms/footer-content/update', 'id' => 1], ['class' => 'title']) ?>
                     </li>
                     <li>
                         <?= Html::a('<i class="fa fa-tags"></i> <span class="title">Email Subscription</span>', ['/cms/email-subscription'], ['class' => 'title']) ?>
@@ -247,40 +236,32 @@ AppAsset::register($this);
                                 <li>
                                     <?= Html::a('<i class="fa fa-angle-double-right"></i>Testimonial', ['/cms/testimonial/index'], ['class' => 'title']) ?>
                                 </li>
+                                <li>
+                                    <?= Html::a('<i class="fa fa-angle-double-right"></i>Equipments', ['/cms/equipments/index'], ['class' => 'title']) ?>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="">
+                                <i class="fa fa-product-hunt"></i>
+                                <span class="title">Product Management</span>
+                            </a>
+                            <ul>
+                                <li>
+                                    <?= Html::a('<i class="fa fa-angle-double-right"></i> Product Category', ['/cms/product-category/index'], ['class' => 'title']) ?>
+                                </li>
+
+                                <li>
+                                    <?= Html::a('<i class="fa fa-angle-double-right"></i> Products', ['/cms/products/index'], ['class' => 'title']) ?>
+                                </li>
                             </ul>
                         </li>
                         <li>
                             <?= Html::a('<i class="fa fa-hotel"></i> About', ['/cms/about/update', 'id' => 1], ['class' => 'title']) ?>
                         </li>
                         <li>
-                            <a href="">
-                                <i class="fa fa-photo"></i>
-                                <span class="title">Gallery</span>
-                            </a>
-                            <ul>
-                                <li>
-                                    <?= Html::a('<i class="fa fa-angle-double-right"></i> Category', ['/cms/category/index'], ['class' => 'title']) ?>
-                                </li>
-                                <li>
-                                    <?= Html::a('<i class="fa fa-angle-double-right"></i> Gallery', ['/cms/gallery/index'], ['class' => 'title']) ?>
-                                </li>
-                            </ul>
+                            <?= Html::a('<i class="fa fa-photo"></i> Project Gallery', ['/cms/project-gallery/index'], ['class' => 'title']) ?>
                         </li>
-                        <li>
-                            <a href="">
-                                <i class="fa fa-ship"></i>
-                                <span class="title">Brand</span>
-                            </a>
-                            <ul>
-                                <li>
-                                    <?= Html::a('<i class="fa fa-angle-double-right"></i> Brands', ['/cms/brand/index'], ['class' => 'title']) ?>
-                                </li>
-                                <li>
-                                    <?= Html::a('<i class="fa fa-angle-double-right"></i> Brand Content', ['/cms/brand-content/update', 'id' => 1], ['class' => 'title']) ?>
-                                </li>
-                            </ul>
-                        </li>
-
                         <li>
                             <?= Html::a('<i class="fa fa-address-card"></i> <span class="title">Contact</span>', ['/cms/contact/update', 'id' => 1], ['class' => 'title']) ?>
                         </li>
@@ -292,9 +273,6 @@ AppAsset::register($this);
                         </li>
                         <li>
                             <?= Html::a('<i class="fa fa-envelope"></i> <span class="title">Contact Us</span>', ['/cms/contact-form/index'], ['class' => 'title']) ?>
-                        </li>
-                        <li>
-                            <?= Html::a('<i class="fa fa-suitcase"></i> <span class="title">Footer Content</span>', ['/cms/footer-content/update', 'id' => 1], ['class' => 'title']) ?>
                         </li>
                         <li>
                             <?= Html::a('<i class="fa fa-tags"></i> <span class="title">Email Subscription</span>', ['/cms/email-subscription'], ['class' => 'title']) ?>

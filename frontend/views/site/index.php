@@ -51,7 +51,7 @@ use yii\widgets\ActiveForm;
 <section class="home-welcom-section" >
     <div class="container">
         <div class="main-head-section"><small class="small">Welcome to </small><h2 class="head">MedScape Medical</h2></div>
-        <p class="text-box">MedScape as the name suggests is an extensive view or representation of the medical world and the equipments used in the medical world. We at MedScape make sure that the best medical products such as Laboratory & Scientific Equipment, Medical & Surgical Equipment, Physiotherapy Equipments, Hospital Furniture’s, Wheel Chairs, Orthopaedic supports, Surgical disposables , Medical Gas Equipment etc. are delivered at your footsteps. The Service provided by us will be one on which you can count on always.</p>
+        <?= $home_content->welcome_content ?>
     </div>
 </section>
 
@@ -61,14 +61,11 @@ use yii\widgets\ActiveForm;
         <div class="col-lg-6">
             <div class="cont-box">
                 <div class="main-head-section-left"><small class="small">Why Choose Us</small><h2 class="head">Why Choose Us</h2></div>
-                <p>MedScape as the name suggests is an extensive view or representation of the medical world and the equipments used in the medical world.</p>
-                <p>We at MedScape make sure that the best medical products such as Laboratory & Scientific Equipment, Medical & Surgical Equipment, Physiotherapy Equipments, Hospital Furniture’s, Wheel Chairs, Orthopaedic supports, Surgical disposables , Medical Gas Equipment etc. are delivered at your footsteps.</p>
-                <p>The Service provided by us will be one on which you can count on always.</p>
+                <?= $home_content->about_content ?>
             </div>
         </div>
         <div class="col-lg-6">
-            <div class="img-box">
-
+            <div class="img-box" style="background: url(<?= yii::$app->homeUrl . 'uploads/about/about_image.' . $home_content->about_image ?>)">
 
             </div>
         </div>
@@ -81,9 +78,9 @@ use yii\widgets\ActiveForm;
         <div class="row justify-content-md-center flex-lg-row-reverse align-items-lg-center ">
             <div class="col-lg-6">
                 <div class="main-head-section-left"><small class="small">Core Values</small><h2 class="head">Core Values</h2></div>
-                <p class="text-box">We believe in treating our customers with respect and faith We grow through creativity, invention and innovation. We integrate honesty, integrity and business ethics into all aspects of our business functioning.</p>
+                <?= $home_content->core_value_content ?>
             </div>
-            <div class="col-lg-6"><img src="images/core-img.jpg" alt="" class="img-fluid"/> </div>
+            <div class="col-lg-6"><img src="<?= yii::$app->homeUrl . 'uploads/about/core_value_image.' . $home_content->core_value_image ?>" alt="core_value_image" class="img-fluid"/> </div>
         </div>
     </div>
 </section>
@@ -134,15 +131,15 @@ use yii\widgets\ActiveForm;
             <div class="col-lg-5">
                 <div class="cont-box">
                     <div class="main-head-section-left"><small class="small">Our Products</small><h2 class="head">Our Products</h2></div>
-                    <p>MedScape Medical gives you an ultimate set of tools that allow you to take full  control of your site with responsive & retina-ready design, various child themes, social integration, SEO optimization and other important and powerful features.</p>
+                    <?= $home_content->our_product_content ?>
                 </div>
             </div>
             <div class="col-lg-6">
                 <div class="row">
-                    <div class="col-6"><div class="img-box"><img src="images/home-projects1.jpg" alt="" class="img-fluid"/></div> </div>
-                    <div class="col-6"><div class="img-box"><img src="images/home-projects2.jpg" alt="" class="img-fluid"/></div> </div>
-                    <div class="col-6"><div class="img-box"><img src="images/home-projects3.jpg" alt="" class="img-fluid"/></div> </div>
-                    <div class="col-6"><div class="img-box"><img src="images/home-projects4.jpg" alt="" class="img-fluid"/></div> </div>
+                    <div class="col-6"><div class="img-box"><img src="<?= yii::$app->homeUrl . 'uploads/about/product_image1.' . $home_content->product_image1 ?>" alt="product_image1" class="img-fluid"/></div> </div>
+                    <div class="col-6"><div class="img-box"><img src="<?= yii::$app->homeUrl . 'uploads/about/product_image2.' . $home_content->product_image2 ?>" alt="product_image2" class="img-fluid"/></div> </div>
+                    <div class="col-6"><div class="img-box"><img src="<?= yii::$app->homeUrl . 'uploads/about/product_image3.' . $home_content->product_image3 ?>" alt="product_image3" class="img-fluid"/></div> </div>
+                    <div class="col-6"><div class="img-box"><img src="<?= yii::$app->homeUrl . 'uploads/about/product_image4.' . $home_content->product_image4 ?>" alt="product_image4" class="img-fluid"/></div> </div>
                 </div>
             </div>
         </div>
@@ -180,32 +177,45 @@ use yii\widgets\ActiveForm;
         <div class="main-head-section"><small class="small">Equipment's</small><h2 class="head">Equipment's</h2></div>
         <div class="list-box">
             <div class="row">
+                <?php
+                if (!empty($equipments)) {
+                    $k = 0;
+                    $list1 = [];
+                    $list2 = [];
+                    foreach ($equipments as $equipment) {
+                        $k++;
+                        if ($k % 2 != 0) {
+                            $list1[] = $equipment->name;
+                        } else {
+                            $list2[] = $equipment->name;
+                        }
+                    }
+                }
+                ?>
                 <div class="col-lg-6">
                     <ul>
-                        <li>Weigh scale digital with BMI ( ADULT, INFANT , PED)</li>
-                        <li>Medical furniture</li>
-                        <li>Patent monitor</li>
-                        <li>Electrosurgical unit</li>
-                        <li>Operation tables</li>
-                        <li>Dental unit and dental equipment</li>
-                        <li>Oxygen cylinders</li>
-                        <li>Medical Gas Equipment Accessory</li>
-                        <li>Medical Gas System: Air Plant,Vacuum Plant, Manufoldes-(O2,N2O,Air4Bar,Air 7Bar,Entnox,Co2), A.G.S.S. Plant</li>
-                        <li>CPAP & BIPAP</li>
+                        <?php
+                        if (!empty($list1)) {
+                            foreach ($list1 as $value1) {
+                                ?>
+                                <li><?= $value1 ?></li>
+                                <?php
+                            }
+                        }
+                        ?>
                     </ul>
                 </div>
                 <div class="col-lg-6">
                     <ul>
-
-                        <li>Medical lights</li>
-                        <li>First aid kits and emergency bags</li>
-                        <li>Bone dens meter</li>
-                        <li>Colposcopes</li>
-                        <li>Defibrillator</li>
-                        <li>Automatic external defibrillators AED</li>
-                        <li>Medical refrigerators</li>
-                        <li>Laboratory Equipments</li>
-                        <li>Medical Equipment Accessories</li>
+                        <?php
+                        if (!empty($list2)) {
+                            foreach ($list2 as $value2) {
+                                ?>
+                                <li><?= $value2 ?></li>
+                                <?php
+                            }
+                        }
+                        ?>
                     </ul>
                 </div>
             </div>

@@ -81,31 +81,15 @@ class SiteController extends Controller {
     public function actionIndex() {
         $sliders = Slider::find()->where(['status' => '1'])->all();
         $testimonials = Testimonial::find()->where(['status' => '1'])->all();
-//        $categories = Category::find()->where(['status' => '1'])->all();
-//        $home_content = HomeContent::findOne(1);
-//        $about = About::findOne(1);
-//        $contacts_content = Contact::findOne(1);
-//        $services = Services::find()->where(['status' => 1])->orderBy(['sort' => SORT_ASC])->all();
         $partners = Partners::find()->where(['status' => 1])->orderBy(['id' => SORT_ASC])->all();
-//        $home_services = HomePageService::find()->where(['status' => 1])->all();
-//        $model = new ContactForm();
-//        if ($model->load(Yii::$app->request->post())) {
-//            $model->date = date('Y-m-d');
-//            if ($model->validate() && $model->save()) {
-//                $this->sendContactMail($model);
-//                return $this->refresh();
-//            }
-//        }
+        $home_content = HomeContent::findOne(1);
+        $equipments = \common\models\Equipments::find()->where(['status' => '1'])->all();
         return $this->render('index', [
                     'sliders' => $sliders,
-//                    'home_content' => $home_content,
+                    'home_content' => $home_content,
                     'testimonials' => $testimonials,
-//                    'categories' => $categories,
-//                    'model' => $model,
-//                    'contacts_content' => $contacts_content,
-//                    'services' => $services,
                     'partners' => $partners,
-//                    'home_services' => $home_services,
+                    'equipments' => $equipments,
         ]);
     }
 
@@ -133,7 +117,7 @@ class SiteController extends Controller {
       //     *
       //     * @return mixed
       // */
-   public function actionClients() {
+    public function actionClients() {
         $partners = Partners::find()->where(['status' => 1])->orderBy(['id' => SORT_ASC])->all();
         return $this->render('client', [
                     'partners' => $partners,
@@ -145,7 +129,7 @@ class SiteController extends Controller {
       //     *
       //     * @return mixed
       // */
-     public function actionContact() {
+    public function actionContact() {
         $contacts_content = Contact::findOne(1);
         $model = new ContactForm();
         if ($model->load(Yii::$app->request->post())) {
