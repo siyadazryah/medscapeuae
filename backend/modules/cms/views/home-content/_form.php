@@ -177,6 +177,14 @@ use dosamigos\ckeditor\CKEditor;
         </div>
     </div>
     <div class="row">
+        <div class='col-md-6 col-sm-6 col-xs-12 left_padd'>    <?= $form->field($model, 'what_we_offer_title')->textInput(['maxlength' => true]) ?>
+
+        </div>
+        <div class='col-md-6 col-sm-6 col-xs-12 left_padd'>    <?= $form->field($model, 'what_we_offer_content')->textInput(['maxlength' => true]) ?>
+
+        </div>
+    </div>
+    <div class="row">
         <div class='col-md-12 col-sm-12 col-xs-12'>
             <div class="form-group">
                 <?= Html::submitButton($model->isNewRecord ? 'Create' : 'Update', ['class' => 'btn btn-success', 'style' => 'float:right;']) ?>

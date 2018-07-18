@@ -82,6 +82,7 @@ class SiteController extends Controller {
         $sliders = Slider::find()->where(['status' => '1'])->all();
         $testimonials = Testimonial::find()->where(['status' => '1'])->all();
         $partners = Partners::find()->where(['status' => 1])->orderBy(['id' => SORT_ASC])->all();
+        $our_services= \common\models\Services::find()->where(['status' => 1])->orderBy(['id' => SORT_DESC])->limit(6)->all();
         $home_content = HomeContent::findOne(1);
         $equipments = \common\models\Equipments::find()->where(['status' => '1'])->all();
         return $this->render('index', [
@@ -90,13 +91,24 @@ class SiteController extends Controller {
                     'testimonials' => $testimonials,
                     'partners' => $partners,
                     'equipments' => $equipments,
+                    'our_services' => $our_services,
         ]);
     }
 
     public function actionAbout() {
         $about = About::findOne(1);
+        $model = new ContactForm();
+        if ($model->load(Yii::$app->request->post())) {
+            $model->date = date('Y-m-d');
+            if ($model->validate() && $model->save()) {
+                $this->sendContactMail($model);
+                Yii::$app->getSession()->setFlash('success', 'Your Enquiry Submitted Successfully');
+                return $this->refresh();
+            }
+        }
         return $this->render('abouts', [
                     'about' => $about,
+                    'model' => $model,
         ]);
     }
 
@@ -106,9 +118,9 @@ class SiteController extends Controller {
       //     * @return mixed
       // */
     public function actionGallery() {
-//        $categories = Category::find()->where(['status' => '1'])->all();
+        $project_gallery = \common\models\ProjectGallery::find()->where(['status' => '1'])->all();
         return $this->render('gallery', [
-//                    'categories' => $categories,
+                    'project_gallery' => $project_gallery,
         ]);
     }
 
@@ -146,27 +158,39 @@ class SiteController extends Controller {
         ]);
     }
 
-//
-    public function actionServices() {
-//        $services = Services::find()->where(['status' => 1])->orderBy(['sort' => SORT_ASC])->all();
+    public function actionService($service = NULL) {
+        $service_lists = \common\models\Services::find()->where(['status' => 1])->all();
+        $service_testimonial = \common\models\ServiceTestimonial::findOne(1);
+        if (isset($service)) {
+            $services = \common\models\Services::find()->where(['status' => 1, 'canonical_name' => $service])->one();
+        } else {
+            $services = \common\models\Services::find()->where(['status' => 1, 'id' => 1])->one();
+        }
+        $model = new ContactForm();
+        if ($model->load(Yii::$app->request->post())) {
+            $model->date = date('Y-m-d');
+            if ($model->validate() && $model->save()) {
+                $this->sendContactMail($model);
+                Yii::$app->getSession()->setFlash('success', 'Your Enquiry Submitted Successfully');
+                return $this->refresh();
+            }
+        }
         return $this->render('service', [
-//                    'services' => $services,
-        ]);
-    }
-
-    public function actionService($service) {
-        $services = Services::find()->where(['status' => 1, 'canonical_name' => $service])->one();
-        return $this->render('service_detail', [
                     'services' => $services,
+                    'service_lists' => $service_lists,
+                    'service_testimonial' => $service_testimonial,
+                    'model' => $model,
         ]);
     }
 
     public function actionProducts() {
-//        $brands = Brand::find()->where(['status' => 1])->all();
-//        $brand_content = BrandContent::findOne(1);
+        $searchModel = new \common\models\ProductsSearch();
+        $dataProvider = $searchModel->search(Yii::$app->request->queryParams);
+        $dataProvider->query->andWhere(['status' => 1]);
+        $dataProvider->pagination->pageSize = 30;
         return $this->render('products', [
-//                    'brands' => $brands,
-//                    'brand_content' => $brand_content,
+                    'searchModel' => $searchModel,
+                    'dataProvider' => $dataProvider,
         ]);
     }
 
@@ -185,13 +209,17 @@ class SiteController extends Controller {
     public function sendContactMail($model) {
 
         $subject = $model->subject;
-        $to = "info@emperor-autocare.com";
+        //    $to = "info@emperor-autocare.com";
+        $to = "manu@azryah.com";
         $message = $this->renderPartial('contact-mail', ['model' => $model,]);
-        $headers = 'MIME-Version: 1.0' . "\r\n";
-        $headers .= "Content-type: text/html; charset=iso-8859-1" . "\r\n" .
-                "From: no-replay@eqec.ae";
-//        echo $message;exit;
-//        mail($to, $subject, $message, $headers);
+        // Always set content-type when sending HTML email
+        $headers = "MIME-Version: 1.0" . "\r\n";
+        $headers .= "Content-type:text/html;charset=UTF-8" . "\r\n";
+
+// More headers
+        $headers .= 'From: <info@coralepitome.com>' . "\r\n";
+
+        mail($to, $subject, $message, $headers);
     }
 
     public function actionSubscribeMail() {
@@ -200,18 +228,26 @@ class SiteController extends Controller {
             if (!empty($email)) {
                 $model = new \common\models\EmailSubscription();
                 $model->email = $email;
-                if ($model->save()) {
-                    $subject = 'Newsletter Subscription Enquiry From emperor.ae';
-                    $to = "emperor@emperorlines.com";
-                    $message = $this->renderPartial('subscribe-mail', ['email' => $email,]);
-                    $headers = 'MIME-Version: 1.0' . "\r\n";
-                    $headers .= "Content-type: text/html; charset=iso-8859-1" . "\r\n" .
-                            "From: no-replay@eqec.ae";
-//                    mail($to, $subject, $message, $headers);
-                    echo json_encode(array('msg' => 'success'));
-                    exit;
+                $exist = \common\models\EmailSubscription::find()->where(['email' => $email])->one();
+                if (empty($exist)) {
+                    if ($model->save()) {
+                        $subject = 'Newsletter Subscription Enquiry From medscapeuae';
+//                        $to = " info@medscapeuae.com";
+                        $to = "manu@azryah.com";
+                        $message = $this->renderPartial('subscribe-mail', ['email' => $email,]);
+                        // Always set content-type when sending HTML email
+                        $headers = "MIME-Version: 1.0" . "\r\n";
+                        $headers .= "Content-type:text/html;charset=UTF-8" . "\r\n";
+
+// More headers
+                        $headers .= 'From: <info@coralepitome.com>' . "\r\n";
+
+                        mail($to, $subject, $message, $headers);
+                        echo 1;
+                        exit;
+                    }
                 } else {
-                    echo json_encode(array('msg' => 'failed', 'error' => 'Email already used'));
+                    echo 0;
                     exit;
                 }
             }

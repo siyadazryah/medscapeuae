@@ -13,11 +13,18 @@ use dosamigos\ckeditor\CKEditor;
 
     <?php $form = ActiveForm::begin(); ?>
     <div class="row">
-        <div class='col-md-4 col-sm-6 col-xs-12 left_padd'>    
+        <div class='col-md-4 col-xs-12 left_padd'>    
             <?= $form->field($model, 'name')->textInput(['maxlength' => true]) ?>
 
-        </div><div class='col-md-4 col-sm-6 col-xs-12 left_padd'>    
+        </div>
+        <div class='col-md-4 col-xs-12 left_padd'>    
             <?= $form->field($model, 'canonical_name')->textInput(['maxlength' => true, 'readOnly' => true]) ?>
+
+        </div>
+    </div>
+    <div class="row">
+        <div class='col-md-12 col-sm-12 col-xs-12 left_padd'>
+            <?= $form->field($model, 'home_page_content')->textarea(['rows' => 4]) ?>
 
         </div>
     </div>

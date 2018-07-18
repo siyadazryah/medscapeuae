@@ -36,11 +36,12 @@ class Services extends \yii\db\ActiveRecord {
      */
     public function rules() {
         return [
-            [['name', 'canonical_name', 'content'], 'required'],
+            [['name', 'canonical_name', 'content','home_page_content'], 'required'],
             [['content'], 'string'],
             [['sort', 'CB', 'UB', 'status'], 'integer'],
             [['DOC', 'DOU'], 'safe'],
             [['name', 'canonical_name', 'image_alt'], 'string', 'max' => 200],
+            [['home_page_content'], 'string', 'max' => 200],
             [['image'], 'required', 'on' => 'create'],
             [['image'], 'file', 'extensions' => 'jpg, gif, png,jpeg'],
         ];

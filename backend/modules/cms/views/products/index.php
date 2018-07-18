@@ -49,10 +49,6 @@ $this->params['breadcrumbs'][] = $this->title;
                                         return $img;
                                     },
                                 ],
-                                            [
-                                'attribute' => 'product_category',
-                                'value' => 'productCategory.category_name'
-                            ],
                                 'title',
                                 [
                                     'attribute' => 'status',

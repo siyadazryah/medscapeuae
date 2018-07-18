@@ -96,36 +96,36 @@ AppAsset::register($this);
                                 <?= Html::a('<i class="fa fa-angle-double-right"></i>Testimonial', ['/cms/testimonial/index'], ['class' => 'title']) ?>
                             </li>
                             <li>
-                                <?= Html::a('<i class="fa fa-angle-double-right"></i>Equipments', ['/cms/equipments/index'], ['class' => 'title']) ?>
+                                <?= Html::a('<i class="fa fa-angle-double-right"></i>Products', ['/cms/equipments/index'], ['class' => 'title']) ?>
                             </li>
                         </ul>
                     </li>
                     <li>
-                        <?= Html::a('<i class="fa fa-hotel"></i> About', ['/cms/about/update', 'id' => 1], ['class' => 'title']) ?>
+                        <?= Html::a('<i class="fa fa-hotel"></i> <span class="title">About</span>', ['/cms/about/update', 'id' => 1], ['class' => 'title']) ?>
                     </li>
                     <li>
-                        <?= Html::a('<i class="fa fa-photo"></i> Project Gallery', ['/cms/project-gallery/index'], ['class' => 'title']) ?>
+                        <?= Html::a('<i class="fa fa-photo"></i> <span class="title">Project Gallery</span>', ['/cms/project-gallery/index'], ['class' => 'title']) ?>
                     </li>
                     <li>
-                        <a href="">
-                            <i class="fa fa-product-hunt"></i>
-                            <span class="title">Product Management</span>
-                        </a>
-                        <ul>
-                            <li>
-                                <?= Html::a('<i class="fa fa-angle-double-right"></i> Product Category', ['/cms/product-category/index'], ['class' => 'title']) ?>
-                            </li>
-
-                            <li>
-                                <?= Html::a('<i class="fa fa-angle-double-right"></i> Products', ['/cms/products/index'], ['class' => 'title']) ?>
-                            </li>
-                        </ul>
+                        <?= Html::a('<i class="fa fa-product-hunt"></i> Products', ['/cms/products/index'], ['class' => 'title']) ?>
                     </li>
                     <li>
                         <?= Html::a('<i class="fa fa-address-card"></i> <span class="title">Contact</span>', ['/cms/contact/update', 'id' => 1], ['class' => 'title']) ?>
                     </li>
                     <li>
-                        <?= Html::a('<i class="fa fa-server"></i> <span class="title">Services</span>', ['/cms/services/index'], ['class' => 'title']) ?>
+                        <a href="">
+                            <i class="fa fa-server"></i>
+                            <span class="title">Service</span>
+                        </a>
+                        <ul>
+                            <li>
+                                <?= Html::a('<i class="fa fa-angle-double-right"></i> <span class="title">Services</span>', ['/cms/services/index'], ['class' => 'title']) ?>
+                            </li>
+
+                            <li>
+                                <?= Html::a('<i class="fa fa-angle-double-right"></i> Testimonial', ['/cms/service-testimonial/index', 'id' => 1], ['class' => 'title']) ?>
+                            </li>
+                        </ul>
                     </li>
                     <li>
                         <?= Html::a('<i class="fa fa-sitemap"></i> <span class="title">Clients</span>', ['/cms/partners/index'], ['class' => 'title']) ?>
@@ -135,6 +135,9 @@ AppAsset::register($this);
                     </li>
                     <li>
                         <?= Html::a('<i class="fa fa-tags"></i> <span class="title">Email Subscription</span>', ['/cms/email-subscription'], ['class' => 'title']) ?>
+                    </li>
+                    <li>
+                        <?= Html::a('<i class="fa fa-link"></i> <span class="title">Social Media Links</span>', ['/cms/social-media-links/update', 'id' => 1], ['class' => 'title']) ?>
                     </li>
                 </ul>
 
@@ -237,36 +240,36 @@ AppAsset::register($this);
                                     <?= Html::a('<i class="fa fa-angle-double-right"></i>Testimonial', ['/cms/testimonial/index'], ['class' => 'title']) ?>
                                 </li>
                                 <li>
-                                    <?= Html::a('<i class="fa fa-angle-double-right"></i>Equipments', ['/cms/equipments/index'], ['class' => 'title']) ?>
+                                    <?= Html::a('<i class="fa fa-angle-double-right"></i>Products', ['/cms/equipments/index'], ['class' => 'title']) ?>
                                 </li>
                             </ul>
                         </li>
                         <li>
-                            <a href="">
-                                <i class="fa fa-product-hunt"></i>
-                                <span class="title">Product Management</span>
-                            </a>
-                            <ul>
-                                <li>
-                                    <?= Html::a('<i class="fa fa-angle-double-right"></i> Product Category', ['/cms/product-category/index'], ['class' => 'title']) ?>
-                                </li>
-
-                                <li>
-                                    <?= Html::a('<i class="fa fa-angle-double-right"></i> Products', ['/cms/products/index'], ['class' => 'title']) ?>
-                                </li>
-                            </ul>
+                            <?= Html::a('<i class="fa fa-product-hunt"></i> Products', ['/cms/products/index'], ['class' => 'title']) ?>
                         </li>
                         <li>
-                            <?= Html::a('<i class="fa fa-hotel"></i> About', ['/cms/about/update', 'id' => 1], ['class' => 'title']) ?>
+                            <?= Html::a('<i class="fa fa-hotel"></i> <span class="title">About</span>', ['/cms/about/update', 'id' => 1], ['class' => 'title']) ?>
                         </li>
                         <li>
-                            <?= Html::a('<i class="fa fa-photo"></i> Project Gallery', ['/cms/project-gallery/index'], ['class' => 'title']) ?>
+                            <?= Html::a('<i class="fa fa-photo"></i> <span class="title">Project Gallery</span>', ['/cms/project-gallery/index'], ['class' => 'title']) ?>
                         </li>
                         <li>
                             <?= Html::a('<i class="fa fa-address-card"></i> <span class="title">Contact</span>', ['/cms/contact/update', 'id' => 1], ['class' => 'title']) ?>
                         </li>
                         <li>
-                            <?= Html::a('<i class="fa fa-server"></i> <span class="title">Services</span>', ['/cms/services/index'], ['class' => 'title']) ?>
+                            <a href="">
+                                <i class="fa fa-server"></i>
+                                <span class="title">Service</span>
+                            </a>
+                            <ul>
+                                <li>
+                                    <?= Html::a('<i class="fa fa-angle-double-right"></i> <span class="title">Services</span>', ['/cms/services/index'], ['class' => 'title']) ?>
+                                </li>
+
+                                <li>
+                                    <?= Html::a('<i class="fa fa-angle-double-right"></i> Testimonial', ['/cms/service-testimonial/update', 'id' => 1], ['class' => 'title']) ?>
+                                </li>
+                            </ul>
                         </li>
                         <li>
                             <?= Html::a('<i class="fa fa-sitemap"></i> <span class="title">Clients</span>', ['/cms/partners/index'], ['class' => 'title']) ?>
@@ -276,6 +279,9 @@ AppAsset::register($this);
                         </li>
                         <li>
                             <?= Html::a('<i class="fa fa-tags"></i> <span class="title">Email Subscription</span>', ['/cms/email-subscription'], ['class' => 'title']) ?>
+                        </li>
+                        <li>
+                            <?= Html::a('<i class="fa fa-link"></i> <span class="title">Social Media Links</span>', ['/cms/social-media-links/update', 'id' => 1], ['class' => 'title']) ?>
                         </li>
                     </ul>
 

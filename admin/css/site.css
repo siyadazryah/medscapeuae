@@ -234,7 +234,7 @@ form .form-group .form-control{
     height: 155px;
     padding: 10px;
     text-align: center;
-    background: #395d9c;
+    background: #52c2df;
 }
 .user-profile-menu .user-header img{
     z-index: 5;
@@ -276,7 +276,7 @@ form .form-group .form-control{
     padding-right: 0px;
 }
 .sidebar-menu .main-menu a {
-    color: #000000;
+    color: #f1f0f0;
     border-bottom: 1px solid #00a4d2;
     padding: 13px 10px;
     font-weight: 500;
@@ -329,7 +329,7 @@ nav.navbar {
     }
 }
 .sidebar-menu.collapsed .main-menu>li>ul {
-    background: #2f5f4c;
+    background: #52c2df;
     width: 250px;
 }
 .grid-view th{
@@ -348,7 +348,7 @@ table.table tr {
     background: 0 0;
     font-size: 17px;
     padding-bottom: 15px;
-    border-bottom: 3px solid #6387c5;
+    border-bottom: 3px solid #a1c743;
 }
 .panel .panel-heading>.panel-title {
     float: left;
@@ -358,7 +358,7 @@ table.table tr {
 .panel {
     border-radius: 5px;
     background-color: #fff;
-    border-top: 2px solid #334f84;
+    border-top: 2px solid #9cc443;
 }
 .control-label{
     color: black;
@@ -612,13 +612,13 @@ a {
     background-color: #f9f9f9;
 }
 .btn.btn-warning.btn-icon-standalone i{
-    background-color: #395d9c;
-    border-right-color: #4574c7;
+    background-color: #42acc7;
+    border-right-color: #42acc7;
 }
 .btn-warning {
     color: #fff;
-    background-color: #335085;
-    border-color: #335085;
+    background-color: #52c2df;
+    border-color: #52c2df;
 }
 .btn-success {
     color: #fff;
@@ -632,11 +632,11 @@ a {
 }
 .btn-warning:hover, .btn-warning:focus, .btn-warning.focus, .btn-warning:active, .btn-warning.active, .open>.dropdown-toggle.btn-warning {
     color: #fff;
-    background-color: #335085;
-    border-color: #335085;
+    background-color: #52c2df;
+    border-color: #52c2df;
 }
 .btn.btn-warning.btn-icon-standalone:hover i {
-    border-right-color: #4574c7;
+    border-right-color: #42acc7;
 }
 .btn-success:hover, .btn-success:focus, .btn-success.focus, .btn-success:active, .btn-success.active, .open>.dropdown-toggle.btn-success {
     color: #fff;
@@ -644,7 +644,7 @@ a {
     border-color: #395d9c;
 }
 .sidebar-menu .main-menu li.has-sub>a:before {
-    color: #000;
+    color: #f1f0f0;
 }
 .grid-view .glyphicon-trash{
     color: #395d9c;
@@ -1363,3 +1363,6 @@ input[type=checkbox], input[type=radio] {
 }
 }
 /*****************************************************Navigation Bar End ***********************/
+#yii-debug-toolbar{
+    display: none !important;
+}

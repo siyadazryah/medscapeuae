@@ -49,7 +49,7 @@ use common\components\ServicemenuWidget;
                                 <!--<div class="dlab-media"> <a href="#"><img src="images/our-services/img3.jpg" alt=""></a></div>-->
                                 <div class="dlab-info m-t30">
                                     <h4 class="dlab-title m-t0">
-                                        <a href="#"><?= $services->title ?></a>
+                                        <a href="#"><?= $services->name ?></a>
                                     </h4>
                                     <?= $services->content ?>
                                 </div>

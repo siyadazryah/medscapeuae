@@ -39,29 +39,31 @@ use yii\widgets\ActiveForm;
 <section class="in-contact-page-form"><!--in-search-result-details-contact-->
     <div class="container" >
         <h3 class="in-page-heading">Get in Touch</h3>
-        <form>
-            <div class="row">
-                <div class="col-md-6">
-                    <input name="" type="text" class="form-control" placeholder="First name">
-                </div>
-                <div class="col-md-6">
-                    <input name="" type="text" class="form-control" placeholder="Last name">
-                </div>
-                <div class="col-md-6">
-                    <input name="" type="text" class="form-control" placeholder="Phone No">
-                </div>
-                <div class="col-md-6">
-                    <input name="" type="text" class="form-control" placeholder="Email">
-                </div>
-                <div class="col-md-12">
-                    <textarea name="" cols="" rows="" class="form-control" placeholder="Your Message"></textarea>
-                </div>
-                <div class="col-md-12">
-                    <input name="" type="submit" class="submit">
-                </div>
-
+        <?php $form = ActiveForm::begin(); ?>
+        <!--<form>-->
+        <div class="row">
+            <div class="col-md-6">
+                <?= $form->field($model, 'name')->textInput(['maxlength' => true, 'placeholder' => 'Your Name'])->label(FALSE) ?>
             </div>
-        </form>
+            <div class="col-md-6">
+                <?= $form->field($model, 'email')->input('email', ['placeholder' => 'Your Email Id'])->label(FALSE) ?>
+            </div>
+            <div class="col-md-6">
+                <?= $form->field($model, 'phone')->textInput(['maxlength' => true, 'placeholder' => 'Phone'])->label(FALSE) ?>
+            </div>
+            <div class="col-md-6">
+                <?= $form->field($model, 'subject')->textInput(['maxlength' => true, 'placeholder' => 'Subject'])->label(FALSE) ?>
+            </div>
+            <div class="col-md-12">
+                <?= $form->field($model, 'message')->textarea(['maxlength' => true, 'placeholder' => 'Your Message', 'cols' => '40', 'rows' => '4'])->label(FALSE) ?>
+            </div>
+            <div class="col-md-12">
+               <?= Html::submitButton('Submit', ['class' => 'submit']) ?>
+            </div>
+
+        </div>
+        <!--</form>-->
+        <?php ActiveForm::end(); ?>
     </div>
 </section>
 <!-- Content END-->

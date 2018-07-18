@@ -8,9 +8,7 @@ use yii\helpers\Html;
         <ul class="list-box collapse" id="our-services">
             <?php if ($all_services) { ?>
                 <?php foreach ($all_services as $service_) { ?>
-                    <li><?= Html::a($service_->name, ['/service/' . $service_->canonical_name], ['class' => 'dropdown-item']); ?>
-                    <li><a href="services.html" class="dropdown-item" title="">Piped medical gas system</a></li>
-
+                    <li><?= Html::a($service_->name, ['/site/service/','service'=>$service_->canonical_name], ['class' => 'dropdown-item']); ?>
                 <?php } ?>
             <?php } ?>
         </ul>

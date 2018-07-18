@@ -49,7 +49,7 @@ class HomeContent extends \yii\db\ActiveRecord
     public function rules()
     {
         return [
-            [['welcome_content', 'about_content', 'core_value_content', 'our_product_content', 'header_email', 'header_phone', 'about_in_footer', 'address', 'phone', 'mobile', 'email', 'web_url'], 'required'],
+            [['welcome_content', 'about_content', 'core_value_content', 'our_product_content', 'header_email', 'header_phone', 'about_in_footer', 'address', 'phone', 'mobile', 'email', 'web_url','what_we_offer_title','what_we_offer_content'], 'required'],
             [['welcome_content', 'about_content', 'core_value_content', 'our_product_content', 'equipments', 'about_in_footer', 'address'], 'string'],
             [['status', 'CB', 'UB'], 'integer'],
             [['email', 'DOC', 'DOU'], 'safe'],
@@ -86,6 +86,8 @@ class HomeContent extends \yii\db\ActiveRecord
             'mobile' => 'Mobile',
             'email' => 'Email',
             'web_url' => 'Web Url',
+            'what_we_offer_title' => 'What We Offer Title',
+            'what_we_offer_content' => 'What We Offer Content',
             'status' => 'Status',
             'CB' => 'Cb',
             'UB' => 'Ub',

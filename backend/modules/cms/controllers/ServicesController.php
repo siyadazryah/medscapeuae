@@ -122,7 +122,7 @@ class ServicesController extends Controller {
                 }
             }
             Yii::$app->session->setFlash('success', "Services Updated Successfully");
-            return $this->redirect(['index']);
+             return $this->redirect(['update', 'id' => $model->id]);
         }
 
         return $this->render('update', [

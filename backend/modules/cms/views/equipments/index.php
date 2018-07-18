@@ -7,7 +7,7 @@ use yii\grid\GridView;
 /* @var $searchModel common\models\EquipmentsSearch */
 /* @var $dataProvider yii\data\ActiveDataProvider */
 
-$this->title = 'Equipments';
+$this->title = 'Products';
 $this->params['breadcrumbs'][] = $this->title;
 ?>
 <div class="equipments-index">
@@ -28,7 +28,7 @@ $this->params['breadcrumbs'][] = $this->title;
 
 
 
-                    <?= Html::a('<i class="fa-th-list"></i><span> Add Equipments</span>', ['create'], ['class' => 'btn btn-warning  btn-icon btn-icon-standalone']) ?>
+                    <?= Html::a('<i class="fa-th-list"></i><span> Add Products</span>', ['create'], ['class' => 'btn btn-warning  btn-icon btn-icon-standalone']) ?>
                     <button class="btn btn-white" id="search-option" style="float: right;">
                         <i class="linecons-search"></i>
                         <span>Search</span>

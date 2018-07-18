@@ -88,38 +88,26 @@ use yii\widgets\ActiveForm;
 <!-- Blurbs-->
 <section class="home-services-section">
     <div class="container">
-        <div class="main-head-section"><small class="small">Core Values</small><h2 class="head">Our Services</h2></div>
+        <div class="main-head-section"><small class="small">Our Services</small><h2 class="head">Our Services</h2></div>
         <div class="row">
-            <div class="col-lg-4 "> 
-                <!-- Blurb minimal-->
-                <article class="cont-box">
-                    <div class="icon-box"><span class="icon fa fa-heartbeat"></span></div>
-                    <div class="unit-body">
-                        <h3 class="head-title">Defibrillator</h3>
-                        <p>Defibrillation is a process in which an electronic device gives an electric shock to the heart. This helps reestablish normal contraction rhythms in a heart having dangerous arrhythmia or in cardiac arrest.</p>
+            <?php
+            if (!empty($our_services)) {
+                foreach ($our_services as $our_service) {
+                    ?>
+                    <div class="col-lg-4 "> 
+                        <!-- Blurb minimal-->
+                        <article class="cont-box">
+                            <div class="icon-box"><span class="icon fa fa-heartbeat"></span></div>
+                            <div class="unit-body">
+                                <h3 class="head-title"><?= $our_service->name ?></h3>
+                                <p><?= $our_service->home_page_content ?></p>
+                            </div>
+                        </article>
                     </div>
-                </article>
-            </div>
-            <div class="col-lg-4 "> 
-                <!-- Blurb minimal-->
-                <article class="cont-box">
-                    <div class="icon-box"><span class="icon fa fa-heartbeat"></span></div>
-                    <div class="unit-body">
-                        <h3 class="head-title">Bed Head Unit</h3>
-                        <p>Bedhead unit is a horizontal type integrating a variety of functions such as those for doctors and nurses to make diagnosis and medical treatment and those for patient's lighting and communication.</p>
-                    </div>
-                </article>
-            </div>
-            <div class="col-lg-4 "> 
-                <!-- Blurb minimal-->
-                <article class="cont-box">
-                    <div class="icon-box"><span class="icon fa fa-heartbeat"></span></div>
-                    <div class="unit-body">
-                        <h3 class="head-title">Fetal Doppler</h3>
-                        <p>A fetal doppler is one type of fetal monitoring. The fetal heart doppler is a non-invasive diagnostic instrument used to detect and measure the fetal heart rate</p>
-                    </div>
-                </article>
-            </div>
+                <?php
+                }
+            }
+            ?>
         </div>
     </div>
 </section>
@@ -149,9 +137,9 @@ use yii\widgets\ActiveForm;
     <!-- RD Parallax-->
     <div class="container">
         <div class="align-self-center">
-            <h2 class="head">Like What We Offer?</h2>
-            <p>Start with this demo now or check out the others to choose what you need.</p>
-            <a class="link" href="#">View now!</a> 
+            <h2 class="head"><?= $home_content->what_we_offer_title ?></h2>
+            <p><?= $home_content->what_we_offer_content ?></p>
+            <?= Html::a('View now!', ['/site/contact'],['class'=>'link']) ?>
         </div>
     </div>
 </section>
@@ -161,11 +149,11 @@ use yii\widgets\ActiveForm;
             <div class="main-head-section"><small class="small">Our clients</small><h2 class="head">Our clients</h2></div>
             <div class="content">
                 <div class="slider lazy">
-                    <?php foreach ($partners as $client) { ?>
+    <?php foreach ($partners as $client) { ?>
                         <div class="clients-box"> 
                             <img src="<?= yii::$app->homeUrl . 'uploads/clients/' . $client->id . '/image.' . $client->image . '?' . rand() ?>" alt="<?= empty($client->image_alt) ? '' : $client->image_alt ?>" title="" class="img-fluid"> 
                         </div>
-                    <?php } ?>
+    <?php } ?>
                 </div>
             </div>
         </div>
@@ -174,7 +162,7 @@ use yii\widgets\ActiveForm;
 <!-- Post Your Latest News-->
 <section class="home-equipment-section">
     <div class="container">
-        <div class="main-head-section"><small class="small">Equipment's</small><h2 class="head">Equipment's</h2></div>
+        <div class="main-head-section"><small class="small">Products</small><h2 class="head">Products</h2></div>
         <div class="list-box">
             <div class="row">
                 <?php
@@ -231,7 +219,7 @@ use yii\widgets\ActiveForm;
             <div class="content">
                 <div class="slider lazy-testimonials">
                     <!-- Quote default-->
-                    <?php foreach ($testimonials as $testimonial) { ?>
+    <?php foreach ($testimonials as $testimonial) { ?>
                         <div class="quote-default"> 
                             <div class="quote-icon"></div>
                             <div class="quote-default-text">
@@ -239,7 +227,7 @@ use yii\widgets\ActiveForm;
                             </div>
                             <h2 class="quote-default-cite"><?= $testimonial->name ?></h2>
                         </div>
-                    <?php } ?>
+    <?php } ?>
 
                 </div>
             </div>
@@ -254,9 +242,9 @@ use yii\widgets\ActiveForm;
             We will send you breaking news right to your inbox.</h5>
         <!-- RD Mailform -->
         <div class="newsletter-form">
-            <form>
+            <form id="mail-subscription">
                 <div class="input-group"> <i class="mail-icon fa fa-envelope-o"></i>
-                    <input type="text" class="form-control"  placeholder="Enter your Email Address" required value="">
+                    <input type="email" class="form-control"  placeholder="Enter your Email Address" required value="" id="newsletter-email">
                     <div class="input-group-addon">
                         <input  type="submit" class="send" value="Subscribe">
                     </div>
@@ -266,3 +254,25 @@ use yii\widgets\ActiveForm;
     </div>
 </section>
 
+<script>
+    $(document).ready(function () {
+
+        $("#mail-subscription").submit(function (e) {
+            $.ajax({
+                type: "POST",
+                url: '<?= Yii::$app->homeUrl; ?>site/subscribe-mail',
+                data: {email: $('#newsletter-email').val()},
+                success: function (data)
+                {
+                    if (data == 0) {
+                        $('#newsletter-email').after('<div id="mail-alert">This Email is Already Subscribed</div>');
+                    } else {
+                        $('#newsletter-email').after('<div id="mail-alert">Your Email Subscription Send Successfully</div>');
+                    }
+                    $('#mail-alert').delay(2000).fadeOut('slow');
+                }
+            });
+            e.preventDefault(); // avoid to execute the actual submit of the form.
+        });
+    });
+</script>

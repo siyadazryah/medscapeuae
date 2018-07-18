@@ -10,6 +10,8 @@ $action = Yii::$app->controller->id . '/' . Yii::$app->controller->action->id;
 
 AppAsset::register($this);
 $home_contents = common\models\HomeContent::findOne(1);
+$services = \common\models\Services::find()->where(['status' => 1])->all();
+$social_media_links = \common\models\SocialMediaLinks::findOne(1);
 ?>
 <?php $this->beginPage() ?>
 <!DOCTYPE html>
@@ -21,8 +23,7 @@ $home_contents = common\models\HomeContent::findOne(1);
         <META NAME="ROBOTS" CONTENT="NOINDEX, NOFOLLOW">
         <meta charset="utf-8">
         <link rel="shortcut icon" href="favicon/icon.png">
-        <!--<script   src="<?= yii::$app->homeUrl ?>js/jquery.min.js"></script>-->
-        <script   src="<?= yii::$app->homeUrl ?>js/jquery-1.6.1.min.js"></script>
+        <script src="<?= yii::$app->homeUrl ?>js/jquery.min.js"></script>
         <?php $this->head() ?>
 
     </head>
@@ -73,34 +74,34 @@ $home_contents = common\models\HomeContent::findOne(1);
                                     <div class="collapse navbar-collapse" id="navbarNavDropdown">
                                         <ul class="navbar-nav">
                                             <li>
-                                                <?= Html::a('Home', ['site/index'], ['class' => 'active']) ?>
+                                                <?= Html::a('Home', ['/site/index'], ['class' => 'active']) ?>
                                                 <!--<a href="index.html" class="active">Home</a>-->
                                             </li>
-                                            <li><?= Html::a('About Us', ['/about-us']) ?></li>
-                                            <li class="dropdown active"> <a href="#"  data-toggle="dropdown">Services</a>
+                                            <li><?= Html::a('About Us', ['/site/about']) ?></li>
+                                            <li class="dropdown active"> <a href=""  data-toggle="dropdown">Services</a>
                                                 <ul class="dropdown-menu animated2 fadeInUp">
-                                                    <li><?= Html::a('Piped medical gas system', ['/services'], ['class' => 'dropdown-item']) ?></li>
-                                                    <li><?= Html::a('Medical Gas equipment’s', ['/services'], ['class' => 'dropdown-item']) ?></li>
-                                                    <li><?= Html::a('Service and AMC contract', ['/services'], ['class' => 'dropdown-item']) ?></li>
-                                                    <li><?= Html::a('OT Sliding door maintenance', ['/services'], ['class' => 'dropdown-item']) ?></li>
-                                                    <li><?= Html::a('Medical furniture', ['/services'], ['class' => 'dropdown-item']) ?></li>
-                                                    <li><?= Html::a('Project management', ['/services'], ['class' => 'dropdown-item']) ?></li>
-                                                    <li><?= Html::a('Testing and commissioning', ['/services'], ['class' => 'dropdown-item']) ?></li>
-                                                    <li><?= Html::a('Dental air & vacuum maintenance', ['/services'], ['class' => 'dropdown-item']) ?></li>
+                                                    <?php
+                                                    if (!empty($services)) {
+                                                        foreach ($services as $service) {
+                                                            ?>
+                                                            <li> <?= Html::a($service->name, ['/site/service', 'service' => $service->canonical_name], ['class' => 'dropdown-item']) ?></li>
+                                                            <?php
+                                                        }
+                                                    }
+                                                    ?>
                                                 </ul>
                                             </li>
                                             <li>
-                                                <?= Html::a('Products', ['site/products']) ?>
+                                                <?= Html::a('Products', ['/site/products']) ?>
                                             </li>
                                             <li>
-                                                <?= Html::a('Project Gallery', ['/gallery']) ?>
+                                                <?= Html::a('Project Gallery', ['/site/gallery']) ?>
                                             </li>
                                             <li>
                                                 <?= Html::a('Our Clients', ['/site/clients']) ?>
                                             </li>
                                             <li>
-                                                <?= Html::a('Contac Us', ['/contact']) ?>
-                                                <!--<a href="contact.html">Contac Us</a>-->
+                                                <?= Html::a('Contac Us', ['/site/contact']) ?>
                                             </li>
                                         </ul>
                                     </div>
@@ -130,13 +131,27 @@ $home_contents = common\models\HomeContent::findOne(1);
                         <div class="f-cont-box">
                             <h6 class="f-head">Navigation</h6>
                             <ul class="f-list">
-                                <li><a href="index.html">Home</a></li>
-                                <li><a href="about.html">About Us</a></li>
-                                <li><a href="projects.html">Projects</a></li>
-                                <li><a href="project-gallery.html">Project Gallery</a></li>
-                                <li><a href="our-clients.html">Our Clients</a></li>
-                                <li><a href="blog.html">Blog</a></li>
-                                <li><a href="contact.html">Contac Us</a></li>
+                                <li>
+                                    <?= Html::a('Home', ['/site/index']) ?>
+                                </li>
+                                <li>
+                                    <?= Html::a('About Us', ['/site/about']) ?>
+                                </li>
+                                <li>
+                                    <?= Html::a('Services', ['/site/service']) ?>
+                                </li>
+                                <li>
+                                    <?= Html::a('Products', ['/site/products']) ?>
+                                </li>
+                                <li>
+                                    <?= Html::a('Project Gallery', ['/site/gallery']) ?>
+                                </li>
+                                <li>
+                                    <?= Html::a('Our Clients', ['/site/clients']) ?>
+                                </li>
+                                <li>
+                                    <?= Html::a('Contac Us', ['/site/contact']) ?>
+                                </li>
                             </ul>
                         </div>
                     </div>
@@ -144,14 +159,15 @@ $home_contents = common\models\HomeContent::findOne(1);
                         <div class="f-cont-box">
                             <h6 class="f-head">Services</h6>
                             <ul class="f-list">
-                                <li><a href="services.html">Piped medical gas system</a></li>
-                                <li><a href="services.html">Medical Gas equipment’s</a></li>
-                                <li><a href="services.html" >Service and AMC contract</a></li>
-                                <li><a href="services.html" >OT Sliding door maintenance</a></li>
-                                <li><a href="services.html" >Medical furniture</a></li>
-                                <li><a href="services.html" >Project management</a></li>
-                                <li><a href="services.html" >Testing and commissioning</a></li>
-                                <li><a href="services.html" >Dental air & vacuum maintenance </a></li>
+                                <?php
+                                if (!empty($services)) {
+                                    foreach ($services as $service) {
+                                        ?>
+                                        <li> <?= Html::a($service->name, ['/site/service', 'service' => $service->canonical_name], ['class' => '']) ?></li>
+                                        <?php
+                                    }
+                                }
+                                ?>
                             </ul>
                         </div>
                     </div>
@@ -188,12 +204,12 @@ $home_contents = common\models\HomeContent::findOne(1);
             <div class="container">
                 <p class="rights">Copyright © 2018 MedScape Medical. All Rights Reserved.</p>
                 <ul class="list-follows">
-                    <li><a class="icon icon-xxs icon-primary fa fa-facebook" href="#"></a></li>
-                    <li><a class="icon icon-xxs icon-primary fa fa-twitter" href="#"></a></li>
-                    <li><a class="icon icon-xxs icon-primary fa fa-google-plus" href="#"></a></li>
-                    <li><a class="icon icon-xxs icon-primary fa fa-vimeo" href="#"></a></li>
-                    <li><a class="icon icon-xxs icon-primary fa fa-youtube" href="#"></a></li>
-                    <li><a class="icon icon-xxs icon-primary fa fa-pinterest" href="#"></a></li>
+                    <li><a class="icon icon-xxs icon-primary fa fa-facebook" href="<?= $social_media_links->facebook ?>" target="_blank"></a></li>
+                    <li><a class="icon icon-xxs icon-primary fa fa-twitter" href="<?= $social_media_links->twitter ?>" target="_blank"></a></li>
+                    <li><a class="icon icon-xxs icon-primary fa fa-google-plus" href="<?= $social_media_links->google_plus ?>" target="_blank"></a></li>
+                    <li><a class="icon icon-xxs icon-primary fa fa-vimeo" href="<?= $social_media_links->vimeo ?>" target="_blank"></a></li>
+                    <li><a class="icon icon-xxs icon-primary fa fa-youtube" href="<?= $social_media_links->youtube ?>" target="_blank"></a></li>
+                    <li><a class="icon icon-xxs icon-primary fa fa-pinterest" href="<?= $social_media_links->instagram ?>" target="_blank"></a></li>
                 </ul>
             </div>
             <div class="clear"></div>
@@ -230,54 +246,3 @@ $home_contents = common\models\HomeContent::findOne(1);
 </body>
 
 </html>
-
-
-<script >
-    jQuery(document).ready(function () {
-
-        $('#newsletter').on('submit', function (e) {
-            e.preventDefault();
-            $('.subscribe_email-2_error').html('');
-            $('.subscribe_email-2_msg').html('');
-            var email = $('#emailsubscription-email').val();
-            if (email !== "") {
-                validateEmail(email);
-            } else {
-                $('.subscribe_email-2_error').html('Enter Valid Email');
-            }
-        });
-
-        function validateEmail(sEmail) {
-
-            var filter = /^([\w-\.]+)@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.)|(([\w-]+\.)+))([a-zA-Z]{2,4}|[0-9]{1,3})(\]?)$/;
-
-            if (filter.test(sEmail)) {
-
-                $.ajax({
-                    type: 'POST',
-//                cache: false,
-//                async: false,
-                    data: {email: sEmail},
-                    url: '<?= Yii::$app->homeUrl; ?>subscribe-mail',
-                    success: function (data) {
-                        var $data = JSON.parse(data);
-                        if ($data.msg === 'success') {
-                            $('#subscribe_email-2').val('');
-                            $('.subscribe_email-2_msg').html(sEmail + ' Successfully subscribed');
-                        } else {
-                            $('.subscribe_email-2_error').html(sEmail + ' already subscribed');
-                        }
-                    }
-                });
-
-            } else {
-                $('.subscribe_email-2_error').html('Enter Valid Email');
-
-            }
-
-        }
-
-        'use strict';
-        dz_rev_slider_2();
-    });	/*ready*/
-</script>

@@ -36,13 +36,12 @@ class Products extends \yii\db\ActiveRecord
     public function rules()
     {
         return [
-            [['product_category', 'title'], 'required'],
+            [['title'], 'required'],
             [['product_category', 'status', 'CB', 'UB'], 'integer'],
             [['DOC', 'DOU'], 'safe'],
             [['title', 'image'], 'string', 'max' => 100],
             [['image'], 'required', 'on' => 'create'],
             [['image'], 'file', 'extensions' => 'jpg, gif, png,jpeg'],
-            [['product_category'], 'exist', 'skipOnError' => true, 'targetClass' => Products::className(), 'targetAttribute' => ['product_category' => 'id']],
         ];
     }
 
@@ -69,7 +68,7 @@ class Products extends \yii\db\ActiveRecord
      */
     public function getProductCategory()
     {
-        return $this->hasOne(Products::className(), ['id' => 'product_category']);
+        return $this->hasOne(ProductCategory::className(), ['id' => 'product_category']);
     }
 
     /**
